@@ -1,0 +1,62 @@
+<html>
+
+<head>
+	  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <form data-collection="test">
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Card Number</label>
+      <input data-stripe_cardtoken="number" placeholder="Card Number" value="4242424242424242">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">CVC</label>
+      <input data-stripe_cardtoken="cvc" placeholder="CVC" value="111">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Expiration Year</label>
+      <input data-stripe_cardtoken="exp_year" placeholder="Exp Year" value="2020">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Expiration Month</label>
+      <input data-stripe_cardtoken="exp_month" placeholder="Exp Month" value="12">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">State</label>
+      <input data-stripe_cardtoken="address_state" placeholder="State" value="Liaoning">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Zipcode</label>
+      <input data-stripe_cardtoken="address_zip" placeholder="Zipcode" value="118000">
+    </div>
+    
+    <input readonly data-stripe_cardtoken="tokenId">
+    
+    <br><br>
+   
+    <button class="stripeCardTokenBtn">Create Token</button>
+  </form>
+  
+	<script>
+    var config = {
+      apiKey: '123456abcdeee',
+      securityKey: 'ekjlferkjflkejrlfkejlkdjfwlrir9530',
+      organization_Id: '5d076e8235984e16ce031474'
+    }
+  </script>
+	
+	<script src="https://server.cocreate.app/js/axios.min.js"></script>
+	<script src="https://server.cocreate.app/js/socket.io.js"></script>
+  <script src="https://server.cocreate.app/js/CoCreate.js"></script>
+  <script src="https://server.cocreate.app/js/CoCreate-stripe.js"></script>
+</body>
+</html>

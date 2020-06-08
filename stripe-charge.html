@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div>This is first charge example with customerId and cardDetail</div>
+  <form data-collection="test">
+    
+    <input data-stripe_customer="customerId" data-document_id="5de6e4590bf6d2b563ebcfb7" name="customerid" value="" readonly>
+    
+    <!-- create customer if customerid is empty -->
+    <input data-stripe_customer="name" placeholder="Name" value="">
+    <input data-stripe_customer="email" placeholder="email" value="">
+
+    
+    <input data-stripe_card="cardId" data-document_id="5de6e4590bf6d2b563ebcfb7" name="cardid" value="" readonly>
+
+    
+    <input data-stripe_charge="amount" placeholder="Amount" value="2000" type="number">
+    <input data-stripe_charge="currency" placeholder="Currency" value="usd">
+    
+    
+    
+    <textarea data-stripe_charge="description" placeholder="Description"></textarea>
+    
+    <button class="chargeCreateBtn">Create Charge</button>
+    
+    
+  </form>
+  
+  
+  
+	<script>
+    var config = {
+      apiKey: '123456abcdeee',
+      securityKey: 'ekjlferkjflkejrlfkejlkdjfwlrir9530',
+      organization_Id: '5d076e8235984e16ce031474'
+    }
+  </script>
+	
+	<script src="https://server.cocreate.app/js/socket.io.js"></script>
+  <script src="https://server.cocreate.app/js/CoCreate.js"></script>
+  <script src="https://server.cocreate.app/js/CoCreate-stripe.js"></script>
+</body>
+</html>

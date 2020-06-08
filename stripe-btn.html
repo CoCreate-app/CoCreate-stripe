@@ -1,0 +1,191 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  
+  
+  <h3>Charge Create Form (CustomerId and CardId exist)</h3>
+  <form data-collection="test">
+    
+    <div class="row">
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">CustomerId</label>
+        <input readonly data-stripe_customer="customerId" data-document_id="5de6e4590bf6d2b563ebcfb7" name="customerid" id="customerId">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">CardId</label>
+        <input readonly data-stripe_card="cardId" data-document_id="5de6e4590bf6d2b563ebcfb7" name="cardid" id="cardId">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Amount</label>
+        <input data-stripe_charge="amount" placeholder="Amount" value="2000" type="number">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Currency</label>
+        <input data-stripe_charge="currency" placeholder="Currency" value="usd">
+      </div>
+      
+    </div>
+    <button class="stripeBtn">Stripe Btn</button>
+  </form>
+  <br><br>
+  
+  
+  <h3>Charge Create Form (CustomerId exist and CardId doesn't exist)</h3>
+  <form data-collection="test">
+    <div class="row">
+      <div style="margin-bottom: 10px" class="col-md-12">
+        <label style="width: 180px; display: inline-block;">CustomerId</label>
+        <input readonly data-stripe_customer="customerId" data-document_id="5de6e4590bf6d2b563ebcfb7" name="customerid" id="customerId">
+      </div>
+      
+      <!--<div style="margin-bottom: 10px" class="col-md-6">-->
+      <!--  <label style="width: 180px; display: inline-block;">CardId</label>-->
+      <!--  <input readonly data-stripe_card="cardId" id="cardId">-->
+      <!--</div>-->
+
+      
+      <h5 class="col-md-12">Card Detail</h5>
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Card Number</label>
+        <input data-stripe_cardtoken="number" placeholder="Card Number" value="4242424242424242">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">CVC</label>
+        <input data-stripe_cardtoken="cvc" placeholder="CVC" value="111">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Expiration Year</label>
+        <input data-stripe_cardtoken="exp_year" placeholder="Exp Year" value="2020">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Expiration Month</label>
+        <input data-stripe_cardtoken="exp_month" placeholder="Exp Month" value="12">
+      </div>
+     
+      <h5 class="col-md-12">Charge Detail</h5>
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Amount</label>
+        <input data-stripe_charge="amount" placeholder="Amount" value="2000" type="number">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Currency</label>
+        <input data-stripe_charge="currency" placeholder="Currency" value="usd">
+      </div>
+    </div>
+    
+    <button class="stripeBtn">Stripe Btn</button>
+  </form>
+  <br><br>
+  
+  
+  <h3>Charge Create Form (CustomerId attribute exist but no value)</h3>
+  <form data-collection="test">
+    <div class="row">
+      <div style="margin-bottom: 10px" class="col-md-12">
+        <label style="width: 180px; display: inline-block;">CustomerId</label>
+        <input readonly data-stripe_customer="customerId">
+      </div>
+      
+      <h5 class="col-md-12">Card Detail</h5>
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Card Number</label>
+        <input data-stripe_cardtoken="number" placeholder="Card Number" value="4242424242424242">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">CVC</label>
+        <input data-stripe_cardtoken="cvc" placeholder="CVC" value="111">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Expiration Year</label>
+        <input data-stripe_cardtoken="exp_year" placeholder="Exp Year" value="2020">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Expiration Month</label>
+        <input data-stripe_cardtoken="exp_month" placeholder="Exp Month" value="12">
+      </div>
+     
+      <h5 class="col-md-12">Charge Detail</h5>
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Amount</label>
+        <input data-stripe_charge="amount" placeholder="Amount" value="2000" type="number">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Currency</label>
+        <input data-stripe_charge="currency" placeholder="Currency" value="usd">
+      </div>
+    </div>
+    
+    <button class="stripeBtn">Stripe Btn</button>
+    
+    
+  </form>
+  
+  <h3>Charge Create Form (CustomerId attribute doesn't exist)</h3>
+  <form data-collection="test">
+    <div class="row">
+      <h5 class="col-md-12">Card Detail</h5>
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Card Number</label>
+        <input data-stripe_cardtoken="number" placeholder="Card Number" value="4242424242424242">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">CVC</label>
+        <input data-stripe_cardtoken="cvc" placeholder="CVC" value="111">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Expiration Year</label>
+        <input data-stripe_cardtoken="exp_year" placeholder="Exp Year" value="2020">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Expiration Month</label>
+        <input data-stripe_cardtoken="exp_month" placeholder="Exp Month" value="12">
+      </div>
+     
+      <h5 class="col-md-12">Charge Detail</h5>
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Amount</label>
+        <input data-stripe_charge="amount" placeholder="Amount" value="2000" type="number">
+      </div>
+      
+      <div style="margin-bottom: 10px" class="col-md-6">
+        <label style="width: 180px; display: inline-block;">Currency</label>
+        <input data-stripe_charge="currency" placeholder="Currency" value="usd">
+      </div>
+    </div>
+    
+    <button class="stripeBtn">Stripe Btn</button>
+    
+    
+  </form>
+  
+	<script>
+    var config = {
+      apiKey: '123456abcdeee',
+      securityKey: 'ekjlferkjflkejrlfkejlkdjfwlrir9530',
+      organization_Id: '5d076e8235984e16ce031474'
+    }
+  </script>
+	
+	<script src="https://server.cocreate.app/js/axios.min.js"></script>
+	<script src="https://server.cocreate.app/js/socket.io.js"></script>
+  <script src="https://server.cocreate.app/js/CoCreate.js"></script>
+  <script src="https://server.cocreate.app/js/CoCreate-stripe.js"></script>
+</body>
+</html>
