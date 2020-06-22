@@ -46,7 +46,7 @@
 //   console.log(json);
   
   
-//   socket.emit('updateDocument', json);
+//   CoCreateSocket.send('updateDocument', json);
     
 // }
 
