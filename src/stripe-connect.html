@@ -3,10 +3,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
     <title>Connect</title>
     <!-- CoCreate UI -->
-  <!--<link rel="stylesheet" href="https://cdn.cocreate.app/CoCreateUI.min.css" type="text/css" />-->
-  <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreateUI.min.css" type="text/css" />
+  <!--<link rel="stylesheet" href="https://cdn.cocreate.app/CoCreate.min.css" type="text/css" />-->
+  <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
@@ -14,14 +15,14 @@
   
  </head>
  <body>
-    <div id="customVPhere" class="hidden"></div>
+    <div id="modal-viewport" class="hidden"></div>
     <div data-main_content_id="content" class="nav width-100-percernt display-flex align-items-center bg-light-gray height-50px" data-scroll_effect="hide-nav" data-scroll_position="50">
         <ul class="cocreate-scroll display-inline-flex direction-rtl font-size-20px align-items-center list-style-type-none">
-            <li><a class="btn-wnd-close"><i class="fas fa-times">
+            <li><a class="btn-modal-close"><i class="fas fa-times">
             </i></a></li>
-            <li><a class="btn-wnd-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
+            <li><a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
             </i></a></li>
-            <li><a class="btn-wnd-minimize"><i class="far fa-window-minimize">
+            <li><a class="btn-modal-minimize"><i class="far fa-window-minimize">
             </i></a></li>
             <li><a class="fs-toggle"><i data-transform_to="fas fa-compress" class="fas fa-expand">
             </i></a></li>
@@ -72,6 +73,6 @@
   <script src="https://server.cocreate.app/js/CoCreateUI.min.js"></script>
 
   <!--CoCreate Plugins-->
-  <script src="https://server.cocreate.app/CoCreate-plugins/CoCreate-modal/CoCreate-modal.js"></script>
+  <script src="https://server.cocreate.app/CoCreate-plugins/CoCreate-modal/src/CoCreate-modal.js"></script>
 </body>
 </html>
