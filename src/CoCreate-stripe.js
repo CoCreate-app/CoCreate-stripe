@@ -49,7 +49,9 @@
 //   CoCreateSocket.send('updateDocument', json);
     
 // }
-
+let url_server = 'http://52.207.107.241:8081';
+//let url_server = 'https://server.cocreate.app';
+//url_server = 'https://server.cocreate.app:8081';
 let customerBtns = document.querySelectorAll('.stripeCustomerBtn');
 let cardTokenBtns = document.querySelectorAll('.stripeCardTokenBtn');
 let cardBtns = document.querySelectorAll('.stripeCardBtn');
@@ -316,7 +318,7 @@ function createStripeCardToken(form, callback) {
   
   console.log(cardTokenParam);
   
-  axios.post('/stripe/createToken', {
+  axios.post(url_server+'/stripe/createToken', {
     param: {
       card: cardTokenParam
     }
