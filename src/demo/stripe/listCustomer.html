@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+ <title>Stripe</title>
+
+<style type="text/css">
+  .template{display:none}
+</style>
+
+ <head>     
+      <h1>List Customer - Stripe</h1>
+<form data-real_time="true" id="customer-form" data-collection="modules" data-form_id="stripe">
+  <button data-actions='listCustomers'>Click getList</button>
+</form>
+<!--
+<div data-template_id="abc1" data-fetch_collection="render_test">
+  <div class="template card card margin:10px " 
+    data-value="{{render2.data._id}}" 
+    data-template_id="abc1" 
+    data-render_array="render2.data">
+        <div class="display:flex justify-content:space-between align-items:center width:100%">
+          <div class="display:flex">
+            <div class="display:flex align-items:center">
+              <span class="icon status font-size:20px margin-right:10px"></span>
+            </div>
+            <div class="display:flex align-items:center  flex-wrap:wrap">
+              <h3 class="margin-right:10px" value="{{render2.data.id}}">ID</h3>
+              <span class="margin-right:10px" value="{{render2.data.email}}">email</span>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+-->
+<div data-template_id="listCustomers">
+    <h4>List Customers: </h4>
+    <div class="template margin:10px;"   data-value="{{data.id}}" data-render_array="data">
+        <form class="padding:5px">
+            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
+                <h3 class="margin-right:10px" value="{{data.id}}">ID</h3>
+                <span class="margin-right:10px" value="{{data.invoice_prefix}}">email</span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script type="text/javascript" >
+</script>
+
+
+  <script>
+    var config = {
+      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+      securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+      organization_Id: '5de0387b12e200ea63204d6c'
+    }
+    
+  </script>
+  
+<script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+<!--<script src="../../js/Cocreate-APISocket.js"></script>-->
+<script src="https://server.cocreate.app/CoCreate-components/CoCreate-api/dist/CoCreate-api.js"></script>
+<script src="../../js/Cocreate-stripe.js"></script>
+<!--<script src="../../../../CoCreate-render/src/CoCreate-render.js"></script>-->
+
+

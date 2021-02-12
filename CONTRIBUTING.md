@@ -1,19 +1,19 @@
-# Contributing to CoCreate-stripe
+# Contributing to CoCreate-domain
 
-This project is work of [many contributors](https://github.com/CoCreate-app/CoCreate-stripe/graphs/contributors).
-You're encouraged to submit [pull requests](https://github.com/CoCreate-app/CoCreate-stripe/pulls),
-[propose features and discuss issues](https://github.com/CoCreate-app/CoCreate-stripe/issues).
+This project is work of [many contributors](https://github.com/CoCreate-app/CoCreate-domain/graphs/contributors).
+You're encouraged to submit [pull requests](https://github.com/CoCreate-app/CoCreate-domain/pulls),
+[propose features and discuss issues](https://github.com/CoCreate-app/CoCreate-domain/issues).
 
 In the examples below, substitute your Github username for `contributor` in URLs.
 
 ## Fork the Project
 
-Fork the [project on Github](https://github.com/CoCreate-app/CoCreate-stripe) and check out your copy.
+Fork the [project on Github](https://github.com/CoCreate-app/CoCreate-domain) and check out your copy.
 
 ```
-git clone https://github.com/contributor/CoCreate-stripe.git
-cd CoCreate-stripe
-git remote add upstream https://github.com/CoCreate-app/CoCreate-stripe.git
+git clone https://github.com/contributor/CoCreate-domain.git
+cd CoCreate-domain
+git remote add upstream https://github.com/CoCreate-app/CoCreate-domain.git
 ```
 
 ## Create a Topic Branch
@@ -70,7 +70,7 @@ git push origin my-feature-branch
 
 ## Make a Pull Request
 
-Go to [https://github.com/CoCreate-app/CoCreate-stripe](https://github.com/CoCreate-app/CoCreate-stripe) and select your feature branch.
+Go to [https://github.com/CoCreate-app/CoCreate-domain](https://github.com/CoCreate-app/CoCreate-domain) and select your feature branch.
 Click the 'Pull Request' button and fill out the form. Pull requests are usually reviewed within a few days.
 
 ## Rebase
@@ -88,7 +88,7 @@ git push origin my-feature-branch -f
 Update the [CHANGELOG](CHANGELOG.md) with the pull request number. A typical entry looks as follows.
 
 ```
-* [#123](https://github.com/CoCreate-app/CoCreate-stripe/pull/123): Reticulated splines - [@contributor](https://github.com/contributor).
+* [#123](https://github.com/CoCreate-app/CoCreate-domain/pull/123): Reticulated splines - [@contributor](https://github.com/contributor).
 ```
 
 Amend your previous commit and force push the changes.

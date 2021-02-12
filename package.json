@@ -1,20 +1,22 @@
 {
-  "name": "CoCreate-stripe",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "@CoCreate/crud",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node app.js"
+    "start-cluster": "PORT=3000 node app.cluster.js",
+    "start": "PORT=8080 node app.js",
+    "start-nodes": "PORT=3000 node app.js & PORT=3001 node app.js & PORT=3002 node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CoCreate-app/CoCreate-stripe.js.git"
-  },
-  "author": "Frank Pagan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CoCreate-app/CoCreate-stripe.js/issues"
-  },
-  "homepage": "https://github.com/CoCreate-app/CoCreate-stripe.js#readme"
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cookie-parser": "~1.4.3",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.9.12",
+    "morgan": "~1.9.0",
+    "redis": "^2.8.0",
+    "socket.io": "^2.3.0",
+    "socket.io-redis": "^5.2.0",
+    "stripe": "^7.14.0"
+  }
 }

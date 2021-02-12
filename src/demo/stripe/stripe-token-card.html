@@ -1,0 +1,76 @@
+<html>
+
+<head>
+	  
+</head>
+<body>
+  
+  <form data-collection="test">
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Card Number</label>
+      <input data-stripe="createTokenCard.number" placeholder="Card Number" value="4242424242424242">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">CVC</label>
+      <input data-stripe="createTokenCard.cvc" placeholder="CVC" value="111">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Expiration Year</label>
+      <input data-stripe="createTokenCard.exp_year" placeholder="Exp Year" value="2020">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Expiration Month</label>
+      <input data-stripe="createTokenCard.exp_month" placeholder="Exp Month" value="12">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">State</label>
+      <input data-stripe="createTokenCard.address_state" placeholder="State" value="Liaoning">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Zipcode</label>
+      <input data-stripe="createTokenCard.address_zip" placeholder="Zipcode" value="118000">
+    </div>
+    
+    
+<div data-template_id="createTokenCard">
+    <h4>Token: </h4>
+    <div class=" margin:10px;"   data-value="{{data.id}}" data-render_array="data">
+        <form class="padding:5px">
+            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
+                <input readonly data-stripe="tokenId" placeholder="tokenGenerate" value="{{data.id}}">
+            </div>
+        </form>
+    </div>
+</div>
+
+<input readonly data-stripe="create.tokenId" placeholder="tokenGenerate" value="{{data.id}}">
+    
+    <br><br>
+     <button data-actions='createTokenCard'>Create Token</button>
+     <button data-actions='create'>Create -</button>
+  </form>
+  
+  <script>
+    var config = {
+      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+      securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+      organization_Id: '5de0387b12e200ea63204d6c'
+    }
+  </script>
+	
+	<!--
+	<script src="https://server.cocreate.app/js/axios.min.js"></script>
+	<script src="https://server.cocreate.app/js/socket.io.js"></script>
+  <script src="https://server.cocreate.app/js/CoCreate.js"></script>
+  <script src="https://server.cocreate.app/js/CoCreate-stripe.js"></script>
+  -->
+  <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+  <script src="https://server.cocreate.app/CoCreate-components/CoCreate-api/dist/CoCreate-api.js"></script>
+  <script src="../../js/Cocreate-stripe.js"></script>
+</body>
+</html>

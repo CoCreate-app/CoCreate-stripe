@@ -1,0 +1,85 @@
+<html>
+
+<head>
+	  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div>This is first charge example with customerId and cardDetail</div>
+  <form data-collection="test">
+    
+    
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Card Number</label>
+      <input data-stripe="createTokenCard.number" placeholder="Card Number" value="4242424242424242">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">CVC</label>
+      <input data-stripe="createTokenCard.cvc" placeholder="CVC" value="111">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Expiration Year</label>
+      <input data-stripe="createTokenCard.exp_year" placeholder="Exp Year" value="2021">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Expiration Month</label>
+      <input data-stripe="createTokenCard.exp_month" placeholder="Exp Month" value="12">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">State</label>
+      <input data-stripe="createTokenCard.address_state" placeholder="State" value="Liaoning">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Zipcode</label>
+      <input data-stripe="createTokenCard.address_zip" placeholder="Zipcode" value="118000">
+    </div>
+    
+    
+<div data-template_id="createTokenCard">
+    <h4>Token: </h4>
+    <div class=" margin:10px;"   data-value="{{data.id}}" data-render_array="data">
+        <form class="padding:5px">
+            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
+                <input readonly data-stripe="createCharge.source" placeholder="tokenGenerate" value="{{data.id}}">
+            </div>
+        </form>
+    </div>
+</div>
+    
+    
+    
+    <input data-stripe="createCharge.amount" placeholder="Amount" value="2000" type="number">
+    <input data-stripe="createCharge.currency" placeholder="Currency" value="usd">
+    <textarea data-stripe="createCharge.description" placeholder="Description"></textarea>
+    
+    
+    <button data-actions="createTokenCard, createCharge">Create Charge</button>
+    
+    
+  </form>
+  
+  
+  
+	<script>
+    var config = {
+      apiKey: '123456abcdeee',
+      securityKey: 'ekjlferkjflkejrlfkejlkdjfwlrir9530',
+      organization_Id: '5d076e8235984e16ce031474'
+    }
+  </script>
+	
+	<script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+  <script src="https://server.cocreate.app/CoCreate-components/CoCreate-api/dist/CoCreate-api.js"></script>
+  <script src="../../js/Cocreate-stripe.js"></script>
+  
+</body>
+</html>

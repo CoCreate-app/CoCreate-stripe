@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <title>TEst socket</title>
+    <body>
+       <h1>See your console in browser</h1>
+    </body>
+</html>
+<!--
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+<script type="text/javascript" >
+    socket=io("/");
+    socket.emit("pingSocket",{'h':'test'});
+    
+    socket.on("pingSocketResponse",function(data){
+        console.log("From server ",data)
+    })
+</script>
+-->
+
+<script>
+var config = {
+  apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+  securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+  organization_Id: '5de0387b12e200ea63204d6c'
+}
+</script>
+<script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.min.lee.js"></script>
+
+
+<script type="text/javascript" >
+    socket.emit("pingSocket",{'h':'test'});
+    
+    socket.on("pingSocketResponse",function(data){
+        console.log("From server ",data)
+    })
+</script>
