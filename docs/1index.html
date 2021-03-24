@@ -61,10 +61,10 @@ var CocreateStripeAPi = function() {
     this.classBtns = [&#x27;.getBalanceBtn&#x27;,];
     this.data_param = &#x27;data-stripe&#x27;;
     this.req_socket = &#x27;stripe&#x27;;
-    CocreateAPiSocket.call(this);
+    CoCreate.apiSocket.call(this);
     
 };
-CocreateStripeAPi.prototype = Object.create(CocreateAPiSocket.prototype);
+CocreateStripeAPi.prototype = Object.create(CoCreate.apiSocket.prototype);
 CocreateStripeAPi.prototype.constructor = CocreateStripeAPi;
 var cocreateStripeRegisterAPi = new CocreateStripeAPi();
                                 </code>

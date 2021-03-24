@@ -1,3 +1,7 @@
+import api from '../../../CoCreate-components/CoCreate-api/src'
+import {socket, crud} from '../../../CoCreateJS/src';
+
+
 const CoCreateStripe = {
 	id: 'stripe',
 	actions: [
@@ -72,6 +76,7 @@ const CoCreateStripe = {
         }
        data = {data: data};
        console.log("data ",data)
+        CoCreate.api.render('getBalance', data);
 	},
 	render_createCustomer: function(data) {
        if (data.object == "error") {
@@ -91,7 +96,9 @@ const CoCreateStripe = {
 	},
 }
 
-CoCreate.api.init({
+api.init({
 	name: CoCreateStripe.id, 
-	module:	CoCreateStripe
+	module:	CoCreateStripe,
 });
+
+export default CoCreateStripe;
