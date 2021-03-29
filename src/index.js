@@ -1,4 +1,4 @@
-import api from '../../../CoCreate-components/CoCreate-api/src'
+import api from '@cocreate/api'
 import {socket, crud} from '../../../CoCreateJS/src';
 
 
