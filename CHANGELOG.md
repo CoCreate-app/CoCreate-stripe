@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.0...v1.0.1) (2021-03-29)
+
+
+### Bug Fixes
+
+* Package Paths ([5bc46d5](https://github.com/CoCreate-app/CoCreate-stripe/commit/5bc46d51c5abb6ae48f0c6306a94272ae85488fc))
+
 # 1.0.0 (2021-03-26)
 
 
