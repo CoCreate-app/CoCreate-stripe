@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.2...v1.0.3) (2021-03-30)
+
+
+### Bug Fixes
+
+* import paths using npm ([a6c8d27](https://github.com/CoCreate-app/CoCreate-stripe/commit/a6c8d271bb75b42dfe9a59937d60daed5af37dde))
+
 ## [1.0.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.1...v1.0.2) (2021-03-30)
 
 
