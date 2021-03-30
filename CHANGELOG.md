@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.1...v1.0.2) (2021-03-30)
+
+
+### Bug Fixes
+
+* cocreatejs from npm ([2d96def](https://github.com/CoCreate-app/CoCreate-stripe/commit/2d96def87f0543d0488bbc2082d027234806a549))
+
 ## [1.0.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.0...v1.0.1) (2021-03-29)
 
 
