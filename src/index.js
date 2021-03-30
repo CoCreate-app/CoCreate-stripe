@@ -1,5 +1,4 @@
-import api from '@cocreate/api'
-import crud from '@cocreate/cocreatejs';
+import api from '@cocreat'
 
 
 const CoCreateStripe = {
