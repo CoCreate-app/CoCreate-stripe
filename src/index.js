@@ -1,5 +1,5 @@
 import api from '@cocreate/api'
-import {socket, crud} from '@cocreate/cocreatejs';
+import crud from '@cocreate/cocreatejs';
 
 
 const CoCreateStripe = {
