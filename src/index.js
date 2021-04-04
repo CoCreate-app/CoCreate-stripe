@@ -1,4 +1,4 @@
-import api from '@cocreat'
+import api from '@cocreate/api'
 
 
 const CoCreateStripe = {
