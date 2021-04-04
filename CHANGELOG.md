@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.3...v1.0.4) (2021-04-04)
+
+
+### Bug Fixes
+
+* update socket to socket-lient and crud to crud client" ([02cbfbf](https://github.com/CoCreate-app/CoCreate-stripe/commit/02cbfbf2c2eabab13ce581edbfbc40c4dbbc827f))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.2...v1.0.3) (2021-03-30)
 
 
