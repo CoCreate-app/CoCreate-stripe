@@ -9,7 +9,7 @@ A simple stripe component in vanilla javascript. Easily configured using HTML5 d
 
 ![CoCreate-stripe](https://cdn.cocreate.app/docs/CoCreate-stripe.gif)
 
-## [Docs & Demo](https://cocreate.app/docs/clone)
+## [Docs & Demo](https://cocreate.app/docs/stripe)
 
 For a complete guide and working demo refer to the [doumentation](https://cocreate.app/docs/stripe)
 
