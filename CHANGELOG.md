@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.5...v1.0.6) (2021-04-19)
+
+
+### Bug Fixes
+
+* ci and build process ([8fd76a8](https://github.com/CoCreate-app/CoCreate-stripe/commit/8fd76a873443d5adc7ca451aa0525df3ab997abf))
+* npm publish and cdn deployment ([6893e64](https://github.com/CoCreate-app/CoCreate-stripe/commit/6893e64c1ca4df530117ada16c6d0f513afc8f72))
+
 ## [1.0.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.4...v1.0.5) (2021-04-14)
 
 
