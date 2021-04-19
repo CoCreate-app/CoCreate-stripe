@@ -1,8 +1,8 @@
 /* global Y */
 'use strict'
-var utils= require('../../utils');
+var utils= require('../../../../src/utils');
 
-const { getOrg } = require("../../utils/crud.js");
+const { getOrg } = require("../../../../src/utils/crud.js");
 
 class CoCreateStripe {
 	constructor(wsManager) {
