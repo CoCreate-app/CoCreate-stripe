@@ -1,6 +1,6 @@
 /* global Y */
 'use strict'
-var utils= require('../../../../src/utils');
+var utils= require('../../../../src/utils/');
 
 const { getOrg } = require("../../../../src/utils/crud.js");
 
