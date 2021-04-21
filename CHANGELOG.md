@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.0...v1.1.1) (2021-04-21)
+
+
+### Bug Fixes
+
+* One package for server and client ([6e5f037](https://github.com/CoCreate-app/CoCreate-stripe/commit/6e5f037a27a01ae1a7725bf8f4a8bf63b67ade36))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.0.7...v1.1.0) (2021-04-19)
 
 
