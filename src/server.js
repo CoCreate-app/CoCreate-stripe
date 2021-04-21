@@ -1,16 +1,16 @@
 /* global Y */
 'use strict'
-var utils= require('../../../../src/utils/');
-
-const { getOrg } = require("../../../../src/utils/crud.js");
+// var utils= require('@cocreate/api/src/server/');
+const  api = require("@cocreate/api");
+// const { getOrg } = require("@cocreate/api/src/server/crud.js");
 
 class CoCreateStripe {
-	constructor(wsManager) {
+	constructor(wsManager, config) {
 		this.module_id = 'stripe';
 		this.enviroment = 'test'; //'test'
 		this.wsManager = wsManager;
 		this.init();
-		
+
 	}
 	
 	init() {
@@ -37,7 +37,7 @@ class CoCreateStripe {
       	 try{
       	       let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
       	       console.log("before")
-               let org_row = await getOrg(params,this.module_id);
+               let org_row = await api.getOrg(params,this.module_id);
                console.log("after")
                let key = org_row['apis.'+this.module_id+'.'+enviroment];
                console.log("key stripe "+key)
@@ -54,7 +54,7 @@ class CoCreateStripe {
                 console.log("CAse listCustomers ")
                 const customers = await stripe.customers.list({limit: 3,});
                 console.log("customer ",customers)
-                utils.send_response(this.wsManager, socket, { "type": data_original["type"], "response": customers }, this.module_id)
+                api.send_response(this.wsManager, socket, { "type": data_original["type"], "response": customers }, this.module_id)
             break;
             case 'createCharge':
                 this.createCharge(socket,type,data["data"],stripe);
@@ -72,9 +72,9 @@ class CoCreateStripe {
                 // stripe = require('stripe')('sk_test_lWZQujOjyjfDq991GZjKmfli');                   //// use platform key
                 stripe.balance.retrieve((err, balance) => {
                     if (!err && balance) {
-                      utils.send_response(this.wsManager, socket, { "type": data_original["type"], "response": balance }, this.module_id)
+                      api.send_response(this.wsManager, socket, { "type": data_original["type"], "response": balance }, this.module_id)
                     } else if (err) {
-                        utils.send_response(this.wsManager, socket, { "type": data_original["type"], "response": 0 }, this.module_id)
+                        api.send_response(this.wsManager, socket, { "type": data_original["type"], "response": 0 }, this.module_id)
                     }
                   });
                 break;
@@ -82,12 +82,12 @@ class CoCreateStripe {
                 const balanceTransaction = await stripe.balanceTransactions.retrieve(
                   'txn_1032HU2eZvKYlo2CEPtcnUvl'
                 );
-                utils.send_response(this.wsManager, socket, { "type": data_original["type"], "response": balanceTransaction }, this.module_id)
+                api.send_response(this.wsManager, socket, { "type": data_original["type"], "response": balanceTransaction }, this.module_id)
             break;
             case 'createCustomer':
                 const customer = await stripe.customers.create(data["data"]);
                 //console.log(" REspuesta ",customer)
-                utils.send_response(this.wsManager, socket, { "type": data_original["type"], "response": customer }, this.module_id)
+                api.send_response(this.wsManager, socket, { "type": data_original["type"], "response": customer }, this.module_id)
             break;
             case 'createSourceCustomer':
                 let id_customer = data['customer_id'];
@@ -96,23 +96,23 @@ class CoCreateStripe {
                   id_customer,
                   data["data"]
                 );
-                utils.send_response(this.wsManager, socket, { "type": data_original["type"], "response": card }, this.module_id)
+                api.send_response(this.wsManager, socket, { "type": data_original["type"], "response": card }, this.module_id)
             break;
         }
         
           
         
         
-        //utils.req(this.url_wilddock+url,method,data,this.wsManager,socket,'Stripe',data_original);
+        //api.req(this.url_wilddock+url,method,data,this.wsManager,socket,'Stripe',data_original);
         
-        //utils.send_response=(wsManager,socket,obj,send_response)
+        //api.send_response=(wsManager,socket,obj,send_response)
 	    
 	}// end sendStripe
 	
 	async createCharge(socket, type, params, stripelib) {
 	    try {
 	        const result = await stripelib.charges.create(params);
-	        utils.send_response(this.wsManager, socket, { "type": type, "response": result }, this.module_id);
+	        api.send_response(this.wsManager, socket, { "type": type, "response": result }, this.module_id);
         } catch (error) {
           this.handleError(socket, type, error)
         }
@@ -126,7 +126,7 @@ class CoCreateStripe {
               customer_id,
               {...params}
             );
-            utils.send_response(this.wsManager, socket, { "type": type, "response": result }, this.module_id);
+            api.send_response(this.wsManager, socket, { "type": type, "response": result }, this.module_id);
         } catch (error) {
           this.handleError(socket, type, error)
         }
@@ -134,7 +134,7 @@ class CoCreateStripe {
 	async createCustomer(socket, type, params, stripelib) {
         try {
             const result = await stripelib.customers.create(params);
-            utils.send_response(this.wsManager, socket, { "type": type, "response": result }, this.module_id);
+            api.send_response(this.wsManager, socket, { "type": type, "response": result }, this.module_id);
         } catch (error) {
           this.handleError(socket, type, error)
         }	    
@@ -145,7 +145,7 @@ class CoCreateStripe {
             const token = await stripelib.tokens.create({
               card: params,
             });
-            utils.send_response(this.wsManager, socket, { "type": type, "response": token }, this.module_id)
+            api.send_response(this.wsManager, socket, { "type": type, "response": token }, this.module_id)
     
         } catch (error) {
           this.handleError(socket, type, error)
@@ -157,7 +157,7 @@ class CoCreateStripe {
           'object': 'error',
           'data':error || error.response || error.response.data || error.response.body || error.message || error,
         };
-        utils.send_response(this.wsManager, socket, { type, response }, this.module_id);
+        api.send_response(this.wsManager, socket, { type, response }, this.module_id);
     }
 	
 }//end Class 
