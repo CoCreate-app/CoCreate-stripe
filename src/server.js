@@ -36,7 +36,6 @@ class CoCreateStripe {
     	 let stripe = false;
       	 try{
       	       let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
-      	       console.log("before")
                let org_row = await api.getOrg(params,this.module_id);
                console.log("after")
                let key = org_row['apis.'+this.module_id+'.'+enviroment];
