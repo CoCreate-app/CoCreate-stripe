@@ -70,6 +70,7 @@ class CoCreateStripe {
             break;
             case 'getBalance':
                 // stripe = require('stripe')('sk_test_lWZQujOjyjfDq991GZjKmfli');                   //// use platform key
+                console.log("Response getBalance Before")
                 stripe.balance.retrieve((err, balance) => {
                     if (!err && balance) {
                       api.send_response(this.wsManager, socket, { "type": data_original["type"], "response": balance }, this.module_id)
