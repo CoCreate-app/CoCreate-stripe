@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.1...v1.1.2) (2021-04-23)
+
+
+### Bug Fixes
+
+* readme and documentation. Removed securitykeys ([4e75bb1](https://github.com/CoCreate-app/CoCreate-stripe/commit/4e75bb1d1db014a3734a3a635ac1ecf30d717259))
+
 ## [1.1.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.0...v1.1.1) (2021-04-21)
 
 
