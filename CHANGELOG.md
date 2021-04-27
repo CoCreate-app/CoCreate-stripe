@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.2...v1.1.3) (2021-04-27)
+
+
+### Bug Fixes
+
+* Update to readme, demo, added cdn scripts ([8e3ff98](https://github.com/CoCreate-app/CoCreate-stripe/commit/8e3ff98c9b476334d599b2f627f76329dde9a6f5))
+
 ## [1.1.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.1...v1.1.2) (2021-04-23)
 
 
