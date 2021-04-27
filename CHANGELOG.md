@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.3...v1.1.4) (2021-04-27)
+
+
+### Bug Fixes
+
+* add host in docs ([7da6889](https://github.com/CoCreate-app/CoCreate-stripe/commit/7da68899c1e934b79e47f5fb5ce1183254a94646))
+
 ## [1.1.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.2...v1.1.3) (2021-04-27)
 
 
