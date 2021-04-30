@@ -35,9 +35,9 @@ class CoCreateStripe {
         let tags = [];
     	 let stripe = false;
       	 try{
+      	       console.log("after")
       	       let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
                let org_row = await api.getOrg(params,this.module_id);
-               console.log("after")
                let key = org_row['apis.'+this.module_id+'.'+enviroment];
                console.log("key stripe "+key)
                stripe = require('stripe')(key);
