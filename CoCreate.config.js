@@ -10,7 +10,7 @@ module.exports = {
             "path": "./docs/index.html",
             "collection": "files",
             "document_id": "6029aeb8e979fb17407e25d7",
-            "key": "html",
+            "key": "src",
             "data":{
                 "name": "stripe Doc",
                 "domains": ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
