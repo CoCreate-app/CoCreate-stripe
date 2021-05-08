@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.4...v1.1.5) (2021-05-08)
+
+
+### Bug Fixes
+
+* add css auto parse and save to docs. ([083bed7](https://github.com/CoCreate-app/CoCreate-stripe/commit/083bed773ab84ca2c1fd1f90b0ceb835ae044d61))
+
 ## [1.1.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.3...v1.1.4) (2021-04-27)
 
 
