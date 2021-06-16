@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.5...v1.1.6) (2021-06-16)
+
+
+### Bug Fixes
+
+* added header for seo ([a11b606](https://github.com/CoCreate-app/CoCreate-stripe/commit/a11b6066f5e91203418fe0a4f912f0dcd9438a1b))
+
 ## [1.1.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.4...v1.1.5) (2021-05-08)
 
 
