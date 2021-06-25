@@ -876,7 +876,7 @@
     "@cocreate/docs" "^1.1.13"
     "@cocreate/hosting" "^1.1.3"
 
-"@cocreate/api@^1.0.0":
+"@cocreate/api@^1.0.17":
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/@cocreate/api/-/api-1.0.17.tgz#7f94461c0e048e1efc1c575142d8c26c7d1073ae"
   integrity sha512-6mDxTRkXYunjSLUOAVD3Li+HTzGW9QG179WaGgIshHyOmcLzqpPqwFnMxt/mtyPa4zX3c//14nD/a6LJg/Zeyg==
@@ -897,7 +897,7 @@
     "@cocreate/docs" "^1.0.0"
     "@cocreate/socket-client" "^1.0.0"
 
-"@cocreate/docs@^1.0.0", "@cocreate/docs@^1.1.13":
+"@cocreate/docs@^1.0.0", "@cocreate/docs@^1.1.13", "@cocreate/docs@^1.1.14":
   version "1.1.14"
   resolved "https://registry.yarnpkg.com/@cocreate/docs/-/docs-1.1.14.tgz#992e6e2e2d9b848e3ba65ff4f4abff07dc3ec6ab"
   integrity sha512-MBSzKticJG8bzfqdN/A1jyLaz5k140S3O6pcN67C1muYfqUpZGxA8Fb4MGZ8QlKjx90De8GgHvZ6XP/x3I4FXw==
