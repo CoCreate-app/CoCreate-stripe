@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.8...v1.1.9) (2021-06-25)
+
+
+### Bug Fixes
+
+* latest version numbers applied to all cocreate packages ([8727804](https://github.com/CoCreate-app/CoCreate-stripe/commit/87278047d06be5eb2b3ad3f5ea5d139d6de25eb8))
+
 ## [1.1.8](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.7...v1.1.8) (2021-06-24)
 
 
