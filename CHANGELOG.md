@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.10...v1.1.11) (2021-06-30)
+
+
+### Bug Fixes
+
+* Update readme.md ([d32f29f](https://github.com/CoCreate-app/CoCreate-stripe/commit/d32f29f10aa23cb7cf5681f550b8e1e14e35962d))
+
 ## [1.1.10](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.9...v1.1.10) (2021-06-30)
 
 
