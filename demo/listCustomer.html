@@ -9,7 +9,7 @@
 
  <head>     
       <h1>List Customer - Stripe</h1>
-<form data-real_time="true" id="customer-form" data-collection="modules" data-form_id="stripe">
+<form data-real_time="true" id="customer-form" data-collection="modules" data-form_id="stripe" data-stripe>
   <button data-actions='listCustomers'>Click getList</button>
 </form>
 <!--
@@ -34,7 +34,7 @@
 -->
 <div data-template_id="listCustomers">
     <h4>List Customers: </h4>
-    <div class="template margin:10px;"   data-value="{{data.id}}" data-render_array="data">
+    <div class="template margin:10px;" data-value="{{data.id}}" data-render_array="data">
         <form class="padding:5px">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                 <h3 class="margin-right:10px" value="{{data.id}}">ID</h3>
@@ -49,19 +49,19 @@
 </script>
 
 
-  <script>
+<script>
     var config = {
-      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-            organization_Id: '5de0387b12e200ea63204d6c'
+        apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+        organization_Id: '5de0387b12e200ea63204d6c',
+        host: 'ws.cocreate.app'
     }
-    
-  </script>
+</script>
 
 <!--CoCreateJS-->
 <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-
+<script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js" ></script>
 <!--CoCreate Plugins-->
 
-  <script src="../dist/CoCreate-stripe.js"></script>
+  <!--<script src="../dist/CoCreate-stripe.js"></script>-->
 </html>
 
