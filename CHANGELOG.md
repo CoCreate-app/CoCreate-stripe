@@ -1,3 +1,11 @@
+## [1.1.13](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.12...v1.1.13) (2021-07-13)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([06e670b](https://github.com/CoCreate-app/CoCreate-stripe/commit/06e670b262a31df271ee5db3a41bf7f7ff9e4e4d))
+* remove yarn.lock ([1edbf70](https://github.com/CoCreate-app/CoCreate-stripe/commit/1edbf70f8351b776f4a648393e070e2e26a56910))
+
 ## [1.1.12](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.11...v1.1.12) (2021-07-10)
 
 
