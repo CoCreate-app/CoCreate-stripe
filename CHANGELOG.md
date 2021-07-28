@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.15...v1.2.0) (2021-07-28)
+
+
+### Features
+
+* add new is{attribute} system and remove data- from attributtes ([d828447](https://github.com/CoCreate-app/CoCreate-stripe/commit/d828447d37f79af0c9e56126aab65e3df6859f89))
+
 ## [1.1.15](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.1.14...v1.1.15) (2021-07-17)
 
 
