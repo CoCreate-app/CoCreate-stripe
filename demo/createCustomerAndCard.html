@@ -14,8 +14,8 @@
   <input type="text" data-stripe="createCustomer.description" value="descripcion Test Customer" >
   <input type="text" data-stripe="createCustomer.email" value="customertest@cocreate.com" >
         <p>createSourceCustomer</p>
-        <div data-template_id="createCustomer">
-            <div class="margin:10px;"   data-value="{{data.id}}" data-render_array="data">
+        <div template_id="createCustomer">
+            <div class="margin:10px;"   data-value="{{data.id}}" render-array="data">
                 <form class="padding:5px">
                     <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                         <input data-stripe="createSourceCustomer.customer_id" value="{{data.id}}">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <input type="text" data-stripe="createSourceCustomer.source" value="tok_amex" >
-  <button type="button" data-actions="createCustomer, createSourceCustomer" id="register">create</button>
+  <button type="button" actions="createCustomer, createSourceCustomer" id="register">create</button>
 </form>
 
 

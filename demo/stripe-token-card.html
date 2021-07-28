@@ -37,9 +37,9 @@
     </div>
     
     
-<div data-template_id="createTokenCard">
+<div template_id="createTokenCard">
     <h4>Token: </h4>
-    <div class=" margin:10px;"   data-value="{{data.id}}" data-render_array="data">
+    <div class=" margin:10px;"   data-value="{{data.id}}" render-array="data">
         <form class="padding:5px">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                 <input readonly data-stripe="tokenId" placeholder="tokenGenerate" value="{{data.id}}">
@@ -51,8 +51,8 @@
 <input readonly data-stripe="create.tokenId" placeholder="tokenGenerate" value="{{data.id}}">
     
     <br><br>
-     <button data-actions='createTokenCard'>Create Token</button>
-     <button data-actions='create'>Create -</button>
+     <button actions='createTokenCard'>Create Token</button>
+     <button actions='create'>Create -</button>
   </form>
   
   <script>

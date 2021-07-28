@@ -10,14 +10,14 @@
  <head>     
       <h1>List Customer - Stripe</h1>
 <form data-real_time="true" id="customer-form" collection="modules" data-form_id="stripe" data-stripe>
-  <button data-actions='listCustomers'>Click getList</button>
+  <button actions='listCustomers'>Click getList</button>
 </form>
 <!--
-<div data-template_id="abc1" data-fetch_collection="render_test">
+<div template_id="abc1" fetch-collection="render_test">
   <div class="template card card margin:10px " 
     data-value="{{render2.data._id}}" 
-    data-template_id="abc1" 
-    data-render_array="render2.data">
+    template_id="abc1" 
+    render-array="render2.data">
         <div class="display:flex justify-content:space-between align-items:center width:100%">
           <div class="display:flex">
             <div class="display:flex align-items:center">
@@ -32,9 +32,9 @@
   </div>
 </div>
 -->
-<div data-template_id="listCustomers">
+<div template_id="listCustomers">
     <h4>List Customers: </h4>
-    <div class="template margin:10px;" data-value="{{data.id}}" data-render_array="data">
+    <div class="template margin:10px;" data-value="{{data.id}}" render-array="data">
         <form class="padding:5px">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                 <h3 class="margin-right:10px" value="{{data.id}}">ID</h3>

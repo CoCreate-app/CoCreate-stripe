@@ -12,9 +12,9 @@
     <input data-stripe="createCustomer.name" placeholder="name">
     <input data-stripe="createCustomer.email" placeholder="email">
     <input data-stripe="createCustomer.description" placeholder="description">
-    <div data-template_id="createCustomer">
+    <div template_id="createCustomer">
         <h4>IdCustomer: </h4>
-        <div class=" margin:10px;"   data-value="{{data.id}}" data-render_array="data">
+        <div class=" margin:10px;"   data-value="{{data.id}}" render-array="data">
             <form class="padding:5px">
                 <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                     <input readonly data-stripe="customer_id" placeholder="Customer ID" value="{{data.id}}">
@@ -22,7 +22,7 @@
             </form>
         </div>
     </div>
-    <button data-actions="createCustomer">Create Customer</button>
+    <button actions="createCustomer">Create Customer</button>
   </form>
   
   <br/>
@@ -34,7 +34,7 @@
     <input data-stripe="updateCustomer.email" placeholder="email">
     <input data-stripe="updateCustomer.description" placeholder="description">
     <input  data-stripe="updateCustomer.customer_id" placeholder="Customer ID" >
-    <button data-actions="updateCustomer">Update Customer</button>
+    <button actions="updateCustomer">Update Customer</button>
   </form>
   
   
