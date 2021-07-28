@@ -9,9 +9,9 @@
 <body>
   
   <div>This is first charge example with customerId and cardDetail</div>
-  <form data-collection="test">
+  <form collection="test">
     
-    <input data-stripe="createCharge.customer_id" data-document_id="5de6e4590bf6d2b563ebcfb7" name="customerid" value="" readonly>
+    <input data-stripe="createCharge.customer_id" document_id="5de6e4590bf6d2b563ebcfb7" name="customerid" value="" readonly>
     
     <!-- create customer if customerid is empty -->
     <!-- 
@@ -20,7 +20,7 @@
     -->
 
     
-    <input data-stripe="createCharge.card_id" data-document_id="5de6e4590bf6d2b563ebcfb7" name="cardid" value="" readonly>
+    <input data-stripe="createCharge.card_id" document_id="5de6e4590bf6d2b563ebcfb7" name="cardid" value="" readonly>
 
     
     <input data-stripe="createCharge.amount" placeholder="Amount" value="2000" type="number">
