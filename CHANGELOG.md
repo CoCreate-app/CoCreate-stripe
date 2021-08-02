@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.1...v1.2.2) (2021-08-02)
+
+
+### Bug Fixes
+
+* remove data- from attributes ([89b353e](https://github.com/CoCreate-app/CoCreate-stripe/commit/89b353e676c9403b7eb362bebe9dc328e447f9e9))
+* update data-fullscreen to fullscreen ([c59d755](https://github.com/CoCreate-app/CoCreate-stripe/commit/c59d75506f71e51de647af554838913dd6e6b5c0))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.0...v1.2.1) (2021-07-28)
 
 
