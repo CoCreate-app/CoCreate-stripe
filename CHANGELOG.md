@@ -1,3 +1,11 @@
+## [1.2.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.2...v1.2.3) (2021-08-14)
+
+
+### Bug Fixes
+
+* replace data-transform with toggle ([7a791a9](https://github.com/CoCreate-app/CoCreate-stripe/commit/7a791a9d5ef646dee53f54520d4fe3cb089a3480))
+* update to  docs ([a06a94f](https://github.com/CoCreate-app/CoCreate-stripe/commit/a06a94f886e5fc002069ed6f5978b06e31ef0b49))
+
 ## [1.2.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.1...v1.2.2) (2021-08-02)
 
 
