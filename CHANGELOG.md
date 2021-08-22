@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.5...v1.2.6) (2021-08-22)
+
+
+### Bug Fixes
+
+* removed data- from main-content, clone, filter-value_type ([d0bcf6a](https://github.com/CoCreate-app/CoCreate-stripe/commit/d0bcf6a05aa931dd814e904f83300d9f6fdd3c0f))
+
 ## [1.2.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.4...v1.2.5) (2021-08-22)
 
 
