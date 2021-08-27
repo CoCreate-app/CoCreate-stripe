@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.7...v1.2.8) (2021-08-27)
+
+
+### Bug Fixes
+
+* updaed dependencies ([449d830](https://github.com/CoCreate-app/CoCreate-stripe/commit/449d830a838347bc9d9f3baa85109c8ee1643481))
+
 ## [1.2.7](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.6...v1.2.7) (2021-08-23)
 
 
