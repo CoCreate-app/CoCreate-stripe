@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@cocreate/api": "^1.1.12",
-    "@cocreate/docs": "^1.2.15",
+    "@cocreate/docs": "^1.2.17",
     "stripe": "^8.144.0"
   }
 }
