@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.11...v1.2.12) (2021-09-09)
+
+
+### Bug Fixes
+
+* CoCreate.config directory, path, name and  public ([dc0d3d7](https://github.com/CoCreate-app/CoCreate-stripe/commit/dc0d3d7dc175d8b2264aa702c1b47b7b3297a8d0))
+
 ## [1.2.11](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.10...v1.2.11) (2021-09-08)
 
 
