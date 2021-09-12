@@ -1,3 +1,10 @@
+## [1.2.16](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.15...v1.2.16) (2021-09-12)
+
+
+### Bug Fixes
+
+* update sidenav to use resize and toggle ([f54a917](https://github.com/CoCreate-app/CoCreate-stripe/commit/f54a917e4402f8c4248ad5beb2de8cf6a63bcacb))
+
 ## [1.2.15](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.14...v1.2.15) (2021-09-09)
 
 
