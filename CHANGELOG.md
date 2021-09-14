@@ -1,3 +1,10 @@
+## [1.2.18](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.17...v1.2.18) (2021-09-14)
+
+
+### Bug Fixes
+
+* add cocreate.app to domains ([9af0c76](https://github.com/CoCreate-app/CoCreate-stripe/commit/9af0c76ddb54c7dc20a6080bb9d5b223182665ed))
+
 ## [1.2.17](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.16...v1.2.17) (2021-09-13)
 
 
