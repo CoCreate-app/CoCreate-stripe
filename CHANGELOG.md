@@ -1,3 +1,11 @@
+## [1.2.25](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.24...v1.2.25) (2021-10-05)
+
+
+### Bug Fixes
+
+* update dependencies ([6819763](https://github.com/CoCreate-app/CoCreate-stripe/commit/68197632023a5e4d37dc97a2639bf0a4a7c293b6))
+* website_id in CoCreate.config ([55c48c2](https://github.com/CoCreate-app/CoCreate-stripe/commit/55c48c24f79b9ded23de282ed3cfe0bf16818bb3))
+
 ## [1.2.24](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.23...v1.2.24) (2021-10-04)
 
 
