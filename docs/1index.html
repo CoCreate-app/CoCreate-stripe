@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CoCreate-api Documentation | CoCreateJS </title>
         <link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
-        <meta name="description" content="A simple HTML5 and pure javascript component. Easy configuration using data-attributes and highly styleable." />
+        <meta name="description" content="A simple HTML5 and pure javascript component. Easy configuration using HTML5 attributes or Javscript api and highly styleable." />
         <meta name="keywords" content="helper classes, utility classes, css framework, css library, inline style classes" />
         <meta name="robots" content="index,follow" />
        	<meta property="og:image" content="https://cdn.cocreate.app/docs/stripe.png">
         
         <!-- CoCreate CSS -->
         <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css"/>
-        <link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" data-save="true"/>
+        <link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" save="true"/>
 	</head>
 
     <body>
@@ -40,7 +40,7 @@
                     <a href="https://github.com/CoCreate-app/CoCreate-api" target="_blank" class="margin-right:15px"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Cocreate, puts at your disposal a new module that works as a communication layer between the backed of cocreate and any API. Step by step, we will learn how to use it and what advantages it brings us using data-attributes</h1>
+            <h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Cocreate, puts at your disposal a new module that works as a communication layer between the backed of cocreate and any API. Step by step, we will learn how to use it and what advantages it brings us using attributes</h1>
             <div id="api-section" class="display:flex flex-wrap:wrap">
                 <div class="flex-grow:1 width:400px width:300px@xs padding:0px_10px margin-top:60px">
                 <div id="stripe-install" class="border-bottom:1px_solid_lightgrey" scroll scroll-intersect="color:dodgerblue" scroll-target="#stripe-install-section">
@@ -78,7 +78,7 @@ var cocreateStripeRegisterAPi = new CocreateStripeAPi();
                             </pre>
                         </div>
                         <p class="padding:10px_0px line-height:1.5"><b><span class="cocreate-badge warning">Array</span> classBtns :</b> Here we place the classes of the actuator buttons, remember that these buttons must always be inside a form </p>
-                        <p class="padding:10px_0px line-height:1.5"><b><span class="cocreate-badge warning">String</span> data_param :</b> Our Cocreate-Api script needs a starting point to collect data-attributes within the parent form of the trigger button, and the data_param attribute you define tells cocreate-api what data to send to the WebSocketServer </p>
+                        <p class="padding:10px_0px line-height:1.5"><b><span class="cocreate-badge warning">String</span> data_param :</b> Our Cocreate-Api script needs a starting point to collect attributes within the parent form of the trigger button, and the data_param attribute you define tells cocreate-api what data to send to the WebSocketServer </p>
                         <p class="padding:10px_0px line-height:1.5"><b><span class="cocreate-badge warning">String</span> req_socket :</b> is used to define the endpoint of the websocket server </p>
                         <p class="padding:10px_0px line-height:1.5">We will call the following file index-connect.html, we will use it as a starting point to start the action that will travel to the server, and it will give us a response from stripe</p>
 
@@ -93,7 +93,7 @@ Name-file : index-connect.html
  &#x3C;title&#x3E;Stripe&#x3C;/title&#x3E;
  &#x3C;head&#x3E;     
 &#x3C;h1&#x3E;Test&#x3C;/h1&#x3E;
-&#x3C;form realtime=&#x22;true&#x22; id=&#x22;customer-form&#x22; collection=&#x22;modules&#x22; data-form_id=&#x22;resller&#x22;&#x3E;
+&#x3C;form realtime=&#x22;true&#x22; id=&#x22;customer-form&#x22; collection=&#x22;modules&#x22;&#x3E;
  &#x3C;button class=&#x27;getBalanceBtn&#x27;&#x3E;getBalanceBtn in console&#x3C;/button&#x3E;
 &#x3C;/form&#x3E;
 &#x3C;script&#x3E;
