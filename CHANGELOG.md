@@ -1,3 +1,10 @@
+## [1.2.32](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.31...v1.2.32) (2021-10-16)
+
+
+### Bug Fixes
+
+* update socket package to fix bug in docs ([d997b04](https://github.com/CoCreate-app/CoCreate-stripe/commit/d997b0451d830e93e4303bddeb3941f1a2ece675))
+
 ## [1.2.31](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.30...v1.2.31) (2021-10-15)
 
 
