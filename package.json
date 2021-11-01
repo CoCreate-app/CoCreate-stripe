@@ -60,8 +60,8 @@
     "webpack-log": "^3.0.1"
   },
   "dependencies": {
-    "@cocreate/api": "^1.1.38",
-    "@cocreate/docs": "^1.2.43",
+    "@cocreate/api": "^1.1.39",
+    "@cocreate/docs": "^1.2.44",
     "stripe": "^8.144.0"
   }
 }
