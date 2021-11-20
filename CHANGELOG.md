@@ -1,3 +1,10 @@
+## [1.2.45](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.44...v1.2.45) (2021-11-20)
+
+
+### Bug Fixes
+
+* updated script tags and link tags ([ee03cb9](https://github.com/CoCreate-app/CoCreate-stripe/commit/ee03cb90cc65380885ac89cc2161a8c3dba13854))
+
 ## [1.2.44](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.43...v1.2.44) (2021-11-20)
 
 
