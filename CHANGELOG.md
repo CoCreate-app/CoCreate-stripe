@@ -1,3 +1,10 @@
+## [1.2.48](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.47...v1.2.48) (2021-11-26)
+
+
+### Bug Fixes
+
+* docs sidenav width ([5501411](https://github.com/CoCreate-app/CoCreate-stripe/commit/5501411383fbb0533f394a69cf9348db33cbc8bc))
+
 ## [1.2.47](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.46...v1.2.47) (2021-11-26)
 
 
