@@ -9,15 +9,15 @@
 <body>
   
   <form collection="test">
-    <input data-stripe="createCustomer.name" placeholder="name">
-    <input data-stripe="createCustomer.email" placeholder="email">
-    <input data-stripe="createCustomer.description" placeholder="description">
+    <input stripe="createCustomer.name" placeholder="name">
+    <input stripe="createCustomer.email" placeholder="email">
+    <input stripe="createCustomer.description" placeholder="description">
     <div template_id="createCustomer">
         <h4>IdCustomer: </h4>
-        <div class=" margin:10px;"   data-value="{{data.id}}" render-array="data">
+        <div class=" margin:10px;"   value="{{data.id}}" render-array="data">
             <form class="padding:5px">
                 <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
-                    <input readonly data-stripe="customer_id" placeholder="Customer ID" value="{{data.id}}">
+                    <input readonly stripe="customer_id" placeholder="Customer ID" value="{{data.id}}">
                 </div>
             </form>
         </div>
@@ -30,10 +30,10 @@
   <br/>
   
   <form collection="test">
-    <input data-stripe="updateCustomer.name" placeholder="name">
-    <input data-stripe="updateCustomer.email" placeholder="email">
-    <input data-stripe="updateCustomer.description" placeholder="description">
-    <input  data-stripe="updateCustomer.customer_id" placeholder="Customer ID" >
+    <input stripe="updateCustomer.name" placeholder="name">
+    <input stripe="updateCustomer.email" placeholder="email">
+    <input stripe="updateCustomer.description" placeholder="description">
+    <input  stripe="updateCustomer.customer_id" placeholder="Customer ID" >
     <button actions="updateCustomer">Update Customer</button>
   </form>
   

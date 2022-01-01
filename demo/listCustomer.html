@@ -9,13 +9,13 @@
 
  <head>     
       <h1>List Customer - Stripe</h1>
-<form realtime="true" id="customer-form" collection="modules" data-stripe>
+<form realtime="true" id="customer-form" collection="modules" stripe>
   <button actions='listCustomers'>Click getList</button>
 </form>
 <!--
 <div template_id="abc1" fetch-collection="render_test">
   <div class="template card card margin:10px " 
-    data-value="{{render2.data._id}}" 
+    value="{{render2.data._id}}" 
     template_id="abc1" 
     render-array="render2.data">
         <div class="display:flex justify-content:space-between align-items:center width:100%">
@@ -34,7 +34,7 @@
 -->
 <div template_id="listCustomers">
     <h4>List Customers: </h4>
-    <div class="template margin:10px;" data-value="{{data.id}}" render-array="data">
+    <div class="template margin:10px;" value="{{data.id}}" render-array="data">
         <form class="padding:5px">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                 <h3 class="margin-right:10px" value="{{data.id}}">ID</h3>

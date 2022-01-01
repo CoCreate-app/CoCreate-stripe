@@ -11,19 +11,19 @@
       <h1>List Customer - Stripe</h1>
 <form >
   <p>createCustomer</p>
-  <input type="text" data-stripe="createCustomer.description" value="descripcion Test Customer" >
-  <input type="text" data-stripe="createCustomer.email" value="customertest@cocreate.com" >
+  <input type="text" stripe="createCustomer.description" value="descripcion Test Customer" >
+  <input type="text" stripe="createCustomer.email" value="customertest@cocreate.com" >
         <p>createSourceCustomer</p>
         <div template_id="createCustomer">
-            <div class="margin:10px;"   data-value="{{data.id}}" render-array="data">
+            <div class="margin:10px;"   value="{{data.id}}" render-array="data">
                 <form class="padding:5px">
                     <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
-                        <input data-stripe="createSourceCustomer.customer_id" value="{{data.id}}">
+                        <input stripe="createSourceCustomer.customer_id" value="{{data.id}}">
                     </div>
                 </form>
             </div>
         </div>
-        <input type="text" data-stripe="createSourceCustomer.source" value="tok_amex" >
+        <input type="text" stripe="createSourceCustomer.source" value="tok_amex" >
   <button type="button" actions="createCustomer, createSourceCustomer" id="register">create</button>
 </form>
 

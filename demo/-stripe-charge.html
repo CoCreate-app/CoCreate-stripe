@@ -11,24 +11,24 @@
   <div>This is first charge example with customerId and cardDetail</div>
   <form collection="test">
     
-    <input data-stripe="createCharge.customer_id" document_id="5de6e4590bf6d2b563ebcfb7" name="customerid" value="" readonly>
+    <input stripe="createCharge.customer_id" document_id="5de6e4590bf6d2b563ebcfb7" name="customerid" value="" readonly>
     
     <!-- create customer if customerid is empty -->
     <!-- 
-    <input data-stripe="name" placeholder="Name" value="">
-    <input data-stripe="email" placeholder="email" value="">
+    <input stripe="name" placeholder="Name" value="">
+    <input stripe="email" placeholder="email" value="">
     -->
 
     
-    <input data-stripe="createCharge.card_id" document_id="5de6e4590bf6d2b563ebcfb7" name="cardid" value="" readonly>
+    <input stripe="createCharge.card_id" document_id="5de6e4590bf6d2b563ebcfb7" name="cardid" value="" readonly>
 
     
-    <input data-stripe="createCharge.amount" placeholder="Amount" value="2000" type="number">
-    <input data-stripe="createCharge.currency" placeholder="Currency" value="usd">
+    <input stripe="createCharge.amount" placeholder="Amount" value="2000" type="number">
+    <input stripe="createCharge.currency" placeholder="Currency" value="usd">
     
     
     
-    <textarea data-stripe="createCharge.description" placeholder="Description"></textarea>
+    <textarea stripe="createCharge.description" placeholder="Description"></textarea>
     
     <button class="createCharge">Create Charge</button>
     

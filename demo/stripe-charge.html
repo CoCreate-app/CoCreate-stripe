@@ -15,41 +15,41 @@
     
     <div style="margin-bottom: 10px">
       <label style="width: 180px; display: inline-block;">Card Number</label>
-      <input data-stripe="createTokenCard.number" placeholder="Card Number" value="4242424242424242">
+      <input stripe="createTokenCard.number" placeholder="Card Number" value="4242424242424242">
     </div>
     
     <div style="margin-bottom: 10px">
       <label style="width: 180px; display: inline-block;">CVC</label>
-      <input data-stripe="createTokenCard.cvc" placeholder="CVC" value="111">
+      <input stripe="createTokenCard.cvc" placeholder="CVC" value="111">
     </div>
     
     <div style="margin-bottom: 10px">
       <label style="width: 180px; display: inline-block;">Expiration Year</label>
-      <input data-stripe="createTokenCard.exp_year" placeholder="Exp Year" value="2021">
+      <input stripe="createTokenCard.exp_year" placeholder="Exp Year" value="2021">
     </div>
     
     <div style="margin-bottom: 10px">
       <label style="width: 180px; display: inline-block;">Expiration Month</label>
-      <input data-stripe="createTokenCard.exp_month" placeholder="Exp Month" value="12">
+      <input stripe="createTokenCard.exp_month" placeholder="Exp Month" value="12">
     </div>
     
     <div style="margin-bottom: 10px">
       <label style="width: 180px; display: inline-block;">State</label>
-      <input data-stripe="createTokenCard.address_state" placeholder="State" value="Liaoning">
+      <input stripe="createTokenCard.address_state" placeholder="State" value="Liaoning">
     </div>
     
     <div style="margin-bottom: 10px">
       <label style="width: 180px; display: inline-block;">Zipcode</label>
-      <input data-stripe="createTokenCard.address_zip" placeholder="Zipcode" value="118000">
+      <input stripe="createTokenCard.address_zip" placeholder="Zipcode" value="118000">
     </div>
     
     
 <div template_id="createTokenCard">
     <h4>Token: </h4>
-    <div class=" margin:10px;"   data-value="{{data.id}}" render-array="data">
+    <div class=" margin:10px;"   value="{{data.id}}" render-array="data">
         <form class="padding:5px">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
-                <input readonly data-stripe="createCharge.source" placeholder="tokenGenerate" value="{{data.id}}">
+                <input readonly stripe="createCharge.source" placeholder="tokenGenerate" value="{{data.id}}">
             </div>
         </form>
     </div>
@@ -57,9 +57,9 @@
     
     
     
-    <input data-stripe="createCharge.amount" placeholder="Amount" value="2000" type="number">
-    <input data-stripe="createCharge.currency" placeholder="Currency" value="usd">
-    <textarea data-stripe="createCharge.description" placeholder="Description"></textarea>
+    <input stripe="createCharge.amount" placeholder="Amount" value="2000" type="number">
+    <input stripe="createCharge.currency" placeholder="Currency" value="usd">
+    <textarea stripe="createCharge.description" placeholder="Description"></textarea>
     
     
     <button actions="createTokenCard, createCharge">Create Charge</button>
