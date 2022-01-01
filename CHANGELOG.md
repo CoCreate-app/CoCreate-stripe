@@ -1,3 +1,10 @@
+## [1.2.54](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.53...v1.2.54) (2022-01-01)
+
+
+### Bug Fixes
+
+* removed data- from attributes ([a19e3d5](https://github.com/CoCreate-app/CoCreate-stripe/commit/a19e3d5a4adcd9f666607caa1ed877f05881de9d))
+
 ## [1.2.53](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.52...v1.2.53) (2021-12-15)
 
 
