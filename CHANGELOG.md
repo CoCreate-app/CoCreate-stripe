@@ -1,3 +1,10 @@
+## [1.2.55](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.54...v1.2.55) (2022-01-01)
+
+
+### Bug Fixes
+
+* get-value attribute value now supports a selector added # to all values currently in get-value attributes ([e2bb87a](https://github.com/CoCreate-app/CoCreate-stripe/commit/e2bb87a71ba0172301ccddc8600b775988ec3792))
+
 ## [1.2.54](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.53...v1.2.54) (2022-01-01)
 
 
