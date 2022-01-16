@@ -1,3 +1,10 @@
+## [1.2.56](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.55...v1.2.56) (2022-01-16)
+
+
+### Bug Fixes
+
+* update class overflow:overlay to overflow:auto ([65c4a64](https://github.com/CoCreate-app/CoCreate-stripe/commit/65c4a6481fe209e464dda9405f0ce2ecbcc37041))
+
 ## [1.2.55](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.54...v1.2.55) (2022-01-01)
 
 
