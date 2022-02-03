@@ -1,3 +1,10 @@
+## [1.2.58](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.57...v1.2.58) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([831005f](https://github.com/CoCreate-app/CoCreate-stripe/commit/831005fb714fac3cbb396c1ffa3cd447c4fb1971))
+
 ## [1.2.57](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.56...v1.2.57) (2022-02-01)
 
 
