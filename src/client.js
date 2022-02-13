@@ -1,7 +1,7 @@
 import api from "@cocreate/api";
 
 const CoCreateStripe = {
-    id: "stripe",
+    name: "stripe",
     actions: [
         "balanceTransaction",
         "createSourceCustomer",
@@ -94,7 +94,7 @@ const CoCreateStripe = {
 };
 
 api.init({
-    name: CoCreateStripe.id,
+    name: CoCreateStripe.name,
     module: CoCreateStripe,
 });
 
