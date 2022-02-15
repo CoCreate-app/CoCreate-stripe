@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html>
+<head>
+ <title>Stripe</title>
+ <head>     
+<h1>Test</h1>
+<form stripe>
+    <button actions='balance.retrieve'>getBalanceBtn in console</button>
+</form>
+<div class="template" template_id="balance.retrieve" render-array="available">
+    <span>{{available.currency}}: </span><span>{{available.amount}}</span>
+</div>
+
+
+<!--CoCreateJS-->
+<!-- <script src="../../../CoCreateJS/dist/CoCreate.js" ></script> -->
+<script src="http://127.0.0.1:4000/CoCreateJS/dist/CoCreate.js" ></script>
+
+<!--CoCreate Plugins-->
+<!--<script src="../dist/CoCreate-stripe.js"></script>-->

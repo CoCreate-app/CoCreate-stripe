@@ -1,0 +1,57 @@
+<html>
+
+<head>
+</head>
+<body>
+  
+  <div>This is first charge example with customerId and cardDetail</div>
+  <form >
+
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Card Number</label>
+      <input stripe="tokens.create.card.number" placeholder="Card Number" value="4242424242424242">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">CVC</label>
+      <input stripe="tokens.create.card.cvc" placeholder="CVC" value="111">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Expiration Year</label>
+      <input stripe="tokens.create.card.exp_year" placeholder="Exp Year" value="2024">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Expiration Month</label>
+      <input stripe="tokens.create.card.exp_month" placeholder="Exp Month" value="12">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">State</label>
+      <input stripe="tokens.create.card.address_state" placeholder="State" value="Liaoning">
+    </div>
+    
+    <div style="margin-bottom: 10px">
+      <label style="width: 180px; display: inline-block;">Zipcode</label>
+      <input stripe="tokens.create.card.address_zip" placeholder="Zipcode" value="118000">
+    </div>
+    
+    
+    <input readonly stripe="charges.create.source" placeholder="token" value="tok_1KTGud2eZvKYlo2CDdy6JeB3">
+    <input stripe="charges.create.amount" placeholder="Amount" value="2000" type="number">
+    <input stripe="charges.create.currency" placeholder="Currency" value="usd">
+    <textarea stripe="charges.create.description" placeholder="Description"></textarea>
+    
+    <button actions="tokens.create, charges.create">Create Charge</button>
+     
+  </form>
+  
+	
+<!--CoCreateJS-->
+<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
+<script src="http://127.0.0.1:4000/CoCreateJS/dist/CoCreate.js" ></script>
+<!-- <script src="../../js/Cocreate-stripe.js"></script> -->
+  
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+  <head>
+      
+  </head>
+  <body>
+    
+    <form>
+      <div style="margin-bottom: 10px">
+        <label style="width: 180px; display: inline-block;">Card Number</label>
+        <input stripe="tokens.create.card.number" placeholder="Card Number" value="4242424242424242">
+      </div>
+      
+      <div style="margin-bottom: 10px">
+        <label style="width: 180px; display: inline-block;">CVC</label>
+        <input stripe="tokens.create.card.cvc" placeholder="CVC" value="111">
+      </div>
+      
+      <div style="margin-bottom: 10px">
+        <label style="width: 180px; display: inline-block;">Expiration Year</label>
+        <input stripe="tokens.create.card.exp_year" placeholder="Exp Year" value="2020">
+      </div>
+      
+      <div style="margin-bottom: 10px">
+        <label style="width: 180px; display: inline-block;">Expiration Month</label>
+        <input stripe="tokens.create.card.exp_month" placeholder="Exp Month" value="12">
+      </div>
+      
+      <div style="margin-bottom: 10px">
+        <label style="width: 180px; display: inline-block;">State</label>
+        <input stripe="tokens.create.card.address_state" placeholder="State" value="Liaoning">
+      </div>
+      
+      <div style="margin-bottom: 10px">
+        <label style="width: 180px; display: inline-block;">Zipcode</label>
+        <input stripe="tokens.create.card.address_zip" placeholder="Zipcode" value="118000">
+      </div>
+      
+      
+    <div template_id="tokens.create">
+      <h4>Token: </h4>
+      <div class="margin:10px;" value="{{data.id}}">
+          <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
+            <input readonly stripe="tokenId" placeholder="token" value="{{data.id}}">
+          </div>
+      </div>
+    </div>
+
+    <input readonly stripe="create.tokenId" placeholder="token" value="{{data.id}}">
+      
+      <br><br>
+      <button actions='tokens.create'>Create Token</button>
+      <button actions='create'>Create -</button>
+    </form>
+    
+    
+
+    <!--CoCreateJS-->
+    <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>-->
+    <script src="http://127.0.0.1:4000/CoCreateJS/dist/CoCreate.js"></script>
+    <!-- <script src="../../js/Cocreate-stripe.js"></script> -->
+  </body>
+</html>

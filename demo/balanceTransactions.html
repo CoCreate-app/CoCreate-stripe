@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Stripe</title>
+    </head>
+    
+    <body>   
+        <h1>balanceTransactions.retrieve</h1>
+        <form>
+            <input stripe.balanceTransactions.retrieve.balance_transaction value="txn_1032HU2eZvKYlo2CEPtcnUvl">
+            <button actions='balanceTransactions.retrieve' stripe>getBalanceBtn in console</button>
+            <div class="template" template_id="balanceTransactions.retrieve" render-array="available">
+                <span>{{currency}}: </span><span>{{amount}}</span>
+            </div>
+        </form>
+
+        <br>
+
+        <h1>balanceTransactions.list</h1>
+        <button actions='balanceTransactions.list'>Request</button>
+        <div class="template" template_id="balanceTransactions.list" render-array="data">
+            <span>{{data.currency}}: </span><span>{{data.amount}}</span>
+        </div>
+
+
+        <!--CoCreateJS-->
+        <!-- <script src="../../../CoCreateJS/dist/CoCreate.js" ></script> -->
+        <script src="http://127.0.0.1:4000/CoCreateJS/dist/CoCreate.js" ></script>
+
+        <!--<script src="../dist/CoCreate-stripe.js"></script>-->
+    </body> 
+</html> 

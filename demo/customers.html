@@ -1,0 +1,58 @@
+<html>
+
+  <head>
+
+  </head>
+
+  <body class="padding:15px">
+    
+    <h1>customers.create</h1>
+    <form collection="test">
+      <input stripe="customers.create.name" placeholder="name">
+      <input stripe="customers.create.email" placeholder="email">
+      <input stripe="customers.create.description" placeholder="description">
+      <div template_id="customers.create" render-key="data">
+        <input readonly placeholder="Customer ID" value="{{data.id}}">
+      </div>    
+      <button actions="customers.create">Create Customer</button>
+    </form>
+    
+    <br/>
+    
+    <h1>customers.update</h1>
+    <form>
+      <input stripe="customers.update.name" placeholder="name" value="ttt">
+      <input stripe="customers.update.email" placeholder="email" value="t@t.com">
+      <input stripe="customers.update.description" placeholder="description" value="hello">
+      <input  stripe="customers.update.customer" placeholder="Customer ID" value="cus_L9SWuMA0tudMz4">
+      <button actions="customers.update">Update Customer</button>
+    </form>
+
+    <br/>
+    
+    <h1>customers.list</h1>
+    <form>
+      <!-- <input stripe='customers.list.environment' value="prod"> -->
+      <button actions='customers.list'>Click getList</button>
+    </form>
+      <div template_id="customers.list">
+        <h4>List Customers: </h4>
+        <div class="template margin:10px;" value="{{data.id}}">
+            <form class="padding:5px">
+                <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
+                    <h3 class="margin-right:10px">{{data.id}}</h3>
+                    <span class="margin-right:10px">{{data.email}}</span>
+                </div>
+            </form>
+        </div>
+    </div>
+      
+  <!--CoCreateJS-->
+  <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
+
+  <!--CoCreate Plugins-->
+  <script src="http://127.0.0.1:4000/CoCreateJS/dist/CoCreate.js" ></script>
+
+  <!-- <script src="../../js/Cocreate-stripe.js"></script> -->
+  </body>
+</html>
