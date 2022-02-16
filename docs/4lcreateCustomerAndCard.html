@@ -129,10 +129,10 @@ switch (type) {
         utils.send_response(that.wsManager,socket,{&#x22;type&#x22;:type,&#x22;response&#x22;:customer},send_response)
     break;
     case &#x27;.createCardBtn&#x27;:
-        let id_customer = data[&#x27;customer_id&#x27;];
+        let customer-id = data[&#x27;customer_id&#x27;];
         delete data[&#x27;customer_id&#x27;];
         const card = await stripe.customers.createSource(
-          id_customer,
+          customer-id,
           data
         );
         utils.send_response(that.wsManager,socket,{&#x22;type&#x22;:type,&#x22;response&#x22;:card},send_response)
