@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.61...v1.3.0) (2022-02-16)
+
+
+### Bug Fixes
+
+* reduced code, get environment from db ([2c5dc05](https://github.com/CoCreate-app/CoCreate-stripe/commit/2c5dc0598462508a45b12c3ff2e3d0df8f6844ec))
+* update id to name ([02496c8](https://github.com/CoCreate-app/CoCreate-stripe/commit/02496c856a605a20dd8856ba9fa64e7b10adea6d))
+
+
+### Features
+
+* define request and response functions, if functions are not deifne defualt functions exist that will request and render results. Reduced and improved code quality ([36cab73](https://github.com/CoCreate-app/CoCreate-stripe/commit/36cab73bda0090b79f9d6c456291cfc0c8462b61))
+
 ## [1.2.61](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.2.60...v1.2.61) (2022-02-11)
 
 
