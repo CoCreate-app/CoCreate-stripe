@@ -17,7 +17,7 @@ class CoCreateStripe {
   async sendStripe(socket, data, roomInfo) {
     let params = data['data'];
     let environment;
-    let type = data['type'];
+    let action = data['action'];
     let stripe = false;
 
     try {
@@ -37,7 +37,7 @@ class CoCreateStripe {
 
     try {
       let response, customer = params.customer;
-      switch (type) {
+      switch (action) {
         case 'customers.list':
           response = await stripe.customers.list();
           break;
@@ -70,19 +70,19 @@ class CoCreateStripe {
           response = await stripe.customers.createSource(customer, params);
           break;
       }
-      this.wsManager.send(socket, this.moduleName, { type, response })
+      this.wsManager.send(socket, this.moduleName, { action, response })
     
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }// end sendStripe
 
-  handleError(socket, type, error) {
+  handleError(socket, action, error) {
     const response = {
       'object': 'error',
       'data': error || error.response || error.response.data || error.response.body || error.message || error,
     };
-    this.wsManager.send(socket, this.moduleName, { type, response })
+    this.wsManager.send(socket, this.moduleName, { action, response })
   }
 }
 
