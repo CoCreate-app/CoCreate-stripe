@@ -1,3 +1,12 @@
+## [1.3.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.1...v1.3.2) (2022-02-24)
+
+
+### Bug Fixes
+
+* CoCreate.config replace CoCreate.app with * ([aacef72](https://github.com/CoCreate-app/CoCreate-stripe/commit/aacef72690892bd0167e3c080af4e194121d6073))
+* get environemt and keys using dot notation ([c6ee968](https://github.com/CoCreate-app/CoCreate-stripe/commit/c6ee968e22f0c6fe7a982bcccf3fe7f49b945867))
+* update param type to action ([176ab13](https://github.com/CoCreate-app/CoCreate-stripe/commit/176ab137b6e3c75eb8f01a5ea94b327e3f4083d4))
+
 ## [1.3.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.0...v1.3.1) (2022-02-16)
 
 
