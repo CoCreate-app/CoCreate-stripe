@@ -26,10 +26,10 @@ class CoCreateStripe {
         environment = params['environment'];
         delete params['environment'];  
       } else {
-        environment = org['apis.' + this.moduleName + '.environment'];
+        environment = org.apis[this.moduleName].environment;
       }
       
-      let key = org['apis.' + this.moduleName + '.' + environment];
+      let key = org.apis[this.moduleName][environment];
       stripe = require('stripe')(key);
     } catch (e) {
       console.log(this.moduleName + " : Error Connect to api", e)
