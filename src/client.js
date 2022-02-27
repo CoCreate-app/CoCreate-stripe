@@ -18,7 +18,7 @@ const CoCreateStripe = {
 
 api.init({
     name: CoCreateStripe.name,
-    module: CoCreateStripe,
+    component: CoCreateStripe,
 });
 
 export default CoCreateStripe;

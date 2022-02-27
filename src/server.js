@@ -3,7 +3,7 @@ const api = require("@cocreate/api");
 
 class CoCreateStripe {
   constructor(wsManager, config) {
-    this.moduleName = 'stripe';
+    this.name = 'stripe';
     this.wsManager = wsManager;
     this.init();
   }
@@ -21,18 +21,18 @@ class CoCreateStripe {
     let stripe = false;
 
     try {
-      let org = await api.getOrg(data, this.moduleName);
+      let org = await api.getOrg(data, this.name);
       if (params.environment){
         environment = params['environment'];
         delete params['environment'];  
       } else {
-        environment = org.apis[this.moduleName].environment;
+        environment = org.apis[this.name].environment;
       }
       
-      let key = org.apis[this.moduleName][environment];
+      let key = org.apis[this.name][environment];
       stripe = require('stripe')(key);
     } catch (e) {
-      console.log(this.moduleName + " : Error Connect to api", e)
+      console.log(this.name + " : Error Connect to api", e)
     }
 
     try {
@@ -70,7 +70,7 @@ class CoCreateStripe {
           response = await stripe.customers.createSource(customer, params);
           break;
       }
-      this.wsManager.send(socket, this.moduleName, { action, response })
+      this.wsManager.send(socket, this.name, { action, response })
     
     } catch (error) {
       this.handleError(socket, action, error)
@@ -82,7 +82,7 @@ class CoCreateStripe {
       'object': 'error',
       'data': error || error.response || error.response.data || error.response.body || error.message || error,
     };
-    this.wsManager.send(socket, this.moduleName, { action, response })
+    this.wsManager.send(socket, this.name, { action, response })
   }
 }
 
