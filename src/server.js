@@ -10,11 +10,11 @@ class CoCreateStripe {
 
   init() {
     if (this.wsManager) {
-      this.wsManager.on('stripe', (socket, data, roomInfo) => this.sendStripe(socket, data, roomInfo));
+      this.wsManager.on('stripe', (socket, data, socketInfo) => this.sendStripe(socket, data, socketInfo));
     }
   }
 
-  async sendStripe(socket, data, roomInfo) {
+  async sendStripe(socket, data, socketInfo) {
     let params = data['data'];
     let environment;
     let action = data['action'];
