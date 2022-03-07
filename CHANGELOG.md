@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.3...v1.3.4) (2022-03-07)
+
+
+### Bug Fixes
+
+* update param roomInfo to socketInfo ([ae613f1](https://github.com/CoCreate-app/CoCreate-stripe/commit/ae613f1376a6d7889a8fa9a5d3b74ff07e2166dd))
+
 ## [1.3.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.2...v1.3.3) (2022-02-27)
 
 
