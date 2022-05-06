@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.4...v1.3.5) (2022-05-06)
+
+
+### Bug Fixes
+
+* update config organization_Id to organization_id ([be4a636](https://github.com/CoCreate-app/CoCreate-stripe/commit/be4a6367763700fa8bcfe672931b3d68d2b1ae4f))
+
 ## [1.3.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.3...v1.3.4) (2022-03-07)
 
 
