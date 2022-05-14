@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.5...v1.4.0) (2022-05-14)
+
+
+### Features
+
+* function readDocumentList has been renamed to readDocuments ([bc0c01c](https://github.com/CoCreate-app/CoCreate-stripe/commit/bc0c01c80203faa7895b0652246c3d0395f83b24))
+
 ## [1.3.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.4...v1.3.5) (2022-05-06)
 
 
