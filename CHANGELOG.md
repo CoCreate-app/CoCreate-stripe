@@ -1,3 +1,11 @@
+## [1.4.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.4.0...v1.4.1) (2022-05-19)
+
+
+### Bug Fixes
+
+* get orgId from socketInfo ([d17a45a](https://github.com/CoCreate-app/CoCreate-stripe/commit/d17a45a952ef676e4bc1c5b634e7271bc283115d))
+* update document_id on link index.css ([b14076e](https://github.com/CoCreate-app/CoCreate-stripe/commit/b14076e8baad3a9133a230b09f57e481f3ef9de8))
+
 # [1.4.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.3.5...v1.4.0) (2022-05-14)
 
 
