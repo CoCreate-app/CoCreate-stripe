@@ -1,3 +1,12 @@
+## [1.4.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.4.2...v1.4.3) (2022-06-12)
+
+
+### Bug Fixes
+
+* update dependencies ([deb2198](https://github.com/CoCreate-app/CoCreate-stripe/commit/deb2198c7f0e9c0befd67c9040ef123749156730))
+* update docs css document_id ([e5b0461](https://github.com/CoCreate-app/CoCreate-stripe/commit/e5b04618957dadf9cd65aa2f58bede5e4a53b48f))
+* update modal btn to actions ([2de1a5f](https://github.com/CoCreate-app/CoCreate-stripe/commit/2de1a5f7476ce869a3534de57d89e67467164360))
+
 ## [1.4.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.4.1...v1.4.2) (2022-05-23)
 
 
