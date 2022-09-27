@@ -10,11 +10,11 @@ class CoCreateStripe {
 
   init() {
     if (this.wsManager) {
-      this.wsManager.on('stripe', (socket, data, socketInfo) => this.sendStripe(socket, data, socketInfo));
+      this.wsManager.on('stripe', (socket, data) => this.sendStripe(socket, data));
     }
   }
 
-  async sendStripe(socket, data, socketInfo) {
+  async sendStripe(socket, data) {
     let params = data['data'];
     let environment;
     let action = data['action'];
@@ -70,7 +70,7 @@ class CoCreateStripe {
           response = await stripe.customers.createSource(customer, params);
           break;
       }
-      this.wsManager.send(socket, this.name, { action, response }, socketInfo)
+      this.wsManager.send(socket, this.name, { action, response })
     
     } catch (error) {
       this.handleError(socket, action, error)
@@ -82,7 +82,7 @@ class CoCreateStripe {
       'object': 'error',
       'data': error || error.response || error.response.data || error.response.body || error.message || error,
     };
-    this.wsManager.send(socket, this.name, { action, response }, socketInfo)
+    this.wsManager.send(socket, this.name, { action, response })
   }
 }
 
