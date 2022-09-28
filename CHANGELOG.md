@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.4.5...v1.5.0) (2022-09-28)
+
+
+### Features
+
+* config is accessible from socket.config ([f755519](https://github.com/CoCreate-app/CoCreate-stripe/commit/f75551912c640d5008780af72cb895d94dab1197))
+
 ## [1.4.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.4.4...v1.4.5) (2022-09-01)
 
 
