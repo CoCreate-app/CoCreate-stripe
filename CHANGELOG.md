@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.0...v1.5.1) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([41a4c3e](https://github.com/CoCreate-app/CoCreate-stripe/commit/41a4c3e540e0ae7c42f17c97d184c8bff010f4de))
+
 # [1.5.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.4.5...v1.5.0) (2022-09-28)
 
 
