@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.8...v1.5.9) (2022-10-02)
+
+
+### Bug Fixes
+
+* minor bug fixes ([3ea9e02](https://github.com/CoCreate-app/CoCreate-stripe/commit/3ea9e02018de058f417dcd1642f629acc5d1197e))
+
 ## [1.5.8](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.7...v1.5.8) (2022-10-02)
 
 
