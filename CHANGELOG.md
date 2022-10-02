@@ -1,3 +1,10 @@
+## [1.5.8](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.7...v1.5.8) (2022-10-02)
+
+
+### Bug Fixes
+
+* bump @cocreate/hosting and @cocreate/socket-client ([536bf2c](https://github.com/CoCreate-app/CoCreate-stripe/commit/536bf2c5e4f25eea5afda082d2f5164cc7fe9bee))
+
 ## [1.5.7](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.6...v1.5.7) (2022-10-01)
 
 
