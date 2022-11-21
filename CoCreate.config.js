@@ -10,7 +10,7 @@ module.exports = {
             "collection": "files",
             "document_id": "6029aeb8e979fb17407e25d7",
             "key": "src",
-            "data":{
+            "document": {
                 "name": "index.html",
                 "path": "/docs/stripe/index.html",
                 "domains": [
