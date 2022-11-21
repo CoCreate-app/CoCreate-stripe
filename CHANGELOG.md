@@ -1,3 +1,10 @@
+## [1.5.12](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.11...v1.5.12) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([9a496f3](https://github.com/CoCreate-app/CoCreate-stripe/commit/9a496f3281d0ca2a79d8ef192d383cf52ba37c94))
+
 ## [1.5.11](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.10...v1.5.11) (2022-11-21)
 
 
