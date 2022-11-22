@@ -1,3 +1,10 @@
+## [1.5.14](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.13...v1.5.14) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([f499944](https://github.com/CoCreate-app/CoCreate-stripe/commit/f49994415609c62cd214c49d7a04ddda80787b31))
+
 ## [1.5.13](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.12...v1.5.13) (2022-11-21)
 
 
