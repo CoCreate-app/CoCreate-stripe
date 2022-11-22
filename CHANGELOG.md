@@ -1,3 +1,10 @@
+## [1.5.15](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.14...v1.5.15) (2022-11-22)
+
+
+### Bug Fixes
+
+* workflow docs ([d694abe](https://github.com/CoCreate-app/CoCreate-stripe/commit/d694abecc1893a2722cd232fa7ae9ccd60c0b43f))
+
 ## [1.5.14](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.13...v1.5.14) (2022-11-22)
 
 
