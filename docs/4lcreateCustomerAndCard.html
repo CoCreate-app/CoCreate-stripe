@@ -91,7 +91,7 @@ function sendDataWebSocket(type,idCustomer=null){
   var btn = document.querySelector(&#x27;button#register&#x27;);
   let dataToSend = cocreateStripeRegisterAPi.getDataJSON(btn,cocreateStripeRegisterAPi);
   dataToSend[&#x27;type&#x27;] = type;
-  if(idCustomer!=null){
+  if (idCustomer!=null){
 &#x9;  dataToSend[&#x27;customer_id&#x27;] = idCustomer;
 &#x9;  //for create CARD
 &#x9;  delete dataToSend[&#x27;description&#x27;];
@@ -157,7 +157,7 @@ var CocreateStripeAPi = function() {
             case &#x27;.createCustomerBtn&#x27;:
                 var localstorage = window.sessionStorage;
                 localstorage[&#x27;customer_id&#x27;] = data[&#x27;response&#x27;][&#x22;id&#x22;];
-                if(data[&#x27;response&#x27;]){
+                if (data[&#x27;response&#x27;]){
                     document.dispatchEvent(new CustomEvent(&#x27;eventRegisterCustomer&#x27;));
                 }
             break;
