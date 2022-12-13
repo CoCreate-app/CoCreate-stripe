@@ -1,3 +1,10 @@
+## [1.5.32](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.31...v1.5.32) (2022-12-13)
+
+
+### Bug Fixes
+
+* removed un used devDependencies ([8dfcea0](https://github.com/CoCreate-app/CoCreate-stripe/commit/8dfcea0f574706f287ddcc803e59766f0e098319))
+
 ## [1.5.31](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.30...v1.5.31) (2022-12-13)
 
 
