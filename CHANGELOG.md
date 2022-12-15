@@ -1,3 +1,10 @@
+## [1.5.33](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.32...v1.5.33) (2022-12-15)
+
+
+### Bug Fixes
+
+* add missing dev dependency style-loader ([175f435](https://github.com/CoCreate-app/CoCreate-stripe/commit/175f4355048c497bfdd3482d85d433a6accbf646))
+
 ## [1.5.32](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.31...v1.5.32) (2022-12-13)
 
 
