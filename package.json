@@ -20,9 +20,7 @@
     "html5-framework",
     "javascript-framework"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "publishConfig": { "access": "public" },
   "scripts": {
     "start": "npx webpack --config webpack.config.js",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
@@ -35,9 +33,7 @@
   },
   "author": "CoCreate LLC",
   "license": "SSPL-1.0",
-  "bugs": {
-    "url": "https://github.com/CoCreate-app/CoCreate-stripe/issues"
-  },
+  "bugs": { "url": "https://github.com/CoCreate-app/CoCreate-stripe/issues" },
   "homepage": "https://cocreate.app/docs/stripe",
   "funding": {
     "type": "GitHub Sponsors ❤",
@@ -59,8 +55,8 @@
     "webpack-log": "^3.0.1"
   },
   "dependencies": {
-    "@cocreate/api": "^1.5.29",
-    "@cocreate/docs": "^1.4.24",
+    "@cocreate/api": "^1.5.30",
+    "@cocreate/docs": "^1.4.25",
     "stripe": "^8.144.0"
   }
 }
