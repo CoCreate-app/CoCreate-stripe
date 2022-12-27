@@ -1,3 +1,11 @@
+## [1.5.40](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.39...v1.5.40) (2022-12-27)
+
+
+### Bug Fixes
+
+* bump dependencies ([d4d4b73](https://github.com/CoCreate-app/CoCreate-stripe/commit/d4d4b736534bbb1d5753f316a334771c0ff51da9))
+* modal href updated to modal-src ([10b85f9](https://github.com/CoCreate-app/CoCreate-stripe/commit/10b85f964a1f6fb05c9f4a201cb97d93fd48f92e))
+
 ## [1.5.39](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.38...v1.5.39) (2022-12-25)
 
 
