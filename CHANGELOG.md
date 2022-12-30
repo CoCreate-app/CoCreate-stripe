@@ -1,3 +1,10 @@
+## [1.5.42](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.41...v1.5.42) (2022-12-30)
+
+
+### Bug Fixes
+
+* update config sources to use template  braces with entry on src ([9f1d088](https://github.com/CoCreate-app/CoCreate-stripe/commit/9f1d088d805f69b5e3d63781080937f899edd2e3))
+
 ## [1.5.41](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.40...v1.5.41) (2022-12-29)
 
 
