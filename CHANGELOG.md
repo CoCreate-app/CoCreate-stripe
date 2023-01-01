@@ -1,3 +1,10 @@
+## [1.5.44](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.43...v1.5.44) (2023-01-01)
+
+
+### Bug Fixes
+
+* docs sanbox overflow ([c31bcb7](https://github.com/CoCreate-app/CoCreate-stripe/commit/c31bcb7a898df1222be59f25c2b7e78568137e8e))
+
 ## [1.5.43](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.42...v1.5.43) (2022-12-31)
 
 
