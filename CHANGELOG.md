@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.44...v1.6.0) (2023-01-02)
+
+
+### Features
+
+* class="template" template_id="id" replaced with template="id" ([078a282](https://github.com/CoCreate-app/CoCreate-stripe/commit/078a2821e553fd0fb343624cf450ae633f7095a3))
+
 ## [1.5.44](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.43...v1.5.44) (2023-01-01)
 
 
