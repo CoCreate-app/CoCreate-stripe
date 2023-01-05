@@ -1,3 +1,11 @@
+## [1.6.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.6.0...v1.6.1) (2023-01-05)
+
+
+### Bug Fixes
+
+* bump cdn to 1.39.4 ([356cf7f](https://github.com/CoCreate-app/CoCreate-stripe/commit/356cf7f6b8880b1622277ed516cd86dc103d1f37))
+* bump dependencies ([6bd0f2f](https://github.com/CoCreate-app/CoCreate-stripe/commit/6bd0f2fe4338cee553e40575c911a9609ffbbd3c))
+
 # [1.6.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.5.44...v1.6.0) (2023-01-02)
 
 
