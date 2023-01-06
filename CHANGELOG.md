@@ -1,3 +1,11 @@
+## [1.6.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.6.1...v1.6.2) (2023-01-06)
+
+
+### Bug Fixes
+
+* bump dependencies, worklow [@v3](https://github.com/v3) ([68c09ae](https://github.com/CoCreate-app/CoCreate-stripe/commit/68c09ae345cb41e805945ee80c04e87b1de017e3))
+* edit in github btn styles ([f8430ac](https://github.com/CoCreate-app/CoCreate-stripe/commit/f8430aca932cda91c045353e172c33319691d782))
+
 ## [1.6.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.6.0...v1.6.1) (2023-01-05)
 
 
