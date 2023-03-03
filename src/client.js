@@ -1,8 +1,8 @@
 import api from "@cocreate/api";
 
-const CoCreateStripe = {
+api.init({
     name: "stripe",
-    actions: {
+    endPoints: {
         'balance.retrieve': {},
         'balanceTransactions.retrieve': {},
         'balanceTransactions.list': {},
@@ -14,11 +14,4 @@ const CoCreateStripe = {
         'tokens.create':{},
         create:{}
     }
-};
-
-api.init({
-    name: CoCreateStripe.name,
-    component: CoCreateStripe,
 });
-
-export default CoCreateStripe;
