@@ -1,3 +1,10 @@
+## [1.6.12](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.6.11...v1.6.12) (2023-03-15)
+
+
+### Bug Fixes
+
+* renamed api action object to endPoint ([a95a70e](https://github.com/CoCreate-app/CoCreate-stripe/commit/a95a70e4b7f8629bd5303acc77cb15fa5af7dedc))
+
 ## [1.6.11](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.6.10...v1.6.11) (2023-02-01)
 
 
