@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.6.12...v1.7.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([632d45f](https://github.com/CoCreate-app/CoCreate-stripe/commit/632d45f2c510fdf3fd3ce7bf8b867135429ea9f0))
+
 ## [1.6.12](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.6.11...v1.6.12) (2023-03-15)
 
 
