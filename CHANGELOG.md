@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.7.2...v1.7.3) (2023-03-30)
+
+
+### Bug Fixes
+
+* bump [@cocreate](https://github.com/cocreate) dependencies' ([07caf4a](https://github.com/CoCreate-app/CoCreate-stripe/commit/07caf4a5051074fa5974763e4d11f699cb29eaa2))
+
 ## [1.7.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.7.1...v1.7.2) (2023-03-16)
 
 
