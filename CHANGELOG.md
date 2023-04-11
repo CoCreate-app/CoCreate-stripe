@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.7.3...v1.7.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([1cd3531](https://github.com/CoCreate-app/CoCreate-stripe/commit/1cd3531282d9016ac5830294832c9c598f5aaf26))
+
 ## [1.7.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.7.2...v1.7.3) (2023-03-30)
 
 
