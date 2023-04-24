@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.0...v1.8.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* removed uglifyjs-webpack-plugin ([499715f](https://github.com/CoCreate-app/CoCreate-stripe/commit/499715fcbaf24b5217fb85d2a92c317200f7dca0))
+
 # [1.8.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.7.6...v1.8.0) (2023-04-24)
 
 
