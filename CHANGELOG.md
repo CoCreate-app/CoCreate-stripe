@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.7.6...v1.8.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([3d0f591](https://github.com/CoCreate-app/CoCreate-stripe/commit/3d0f59111b30554dc80dc5956db8fa04ceef3a66))
+
 ## [1.7.6](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.7.5...v1.7.6) (2023-04-11)
 
 
