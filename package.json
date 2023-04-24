@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/stripe",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "description": "A simple stripe component in vanilla javascript. Easily configured using HTML5 attributes and/or JavaScript API.",
   "keywords": [
     "stripe",

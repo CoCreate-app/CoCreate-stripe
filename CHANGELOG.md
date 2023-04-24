@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.3...v1.8.4) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([1b04b4c](https://github.com/CoCreate-app/CoCreate-stripe/commit/1b04b4cf4ab9b6ae4df4cfd68a36725af191ce91))
+
 ## [1.8.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.2...v1.8.3) (2023-04-24)
 
 
