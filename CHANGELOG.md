@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.2...v1.8.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* workflow node version updated  16 ([3069c86](https://github.com/CoCreate-app/CoCreate-stripe/commit/3069c863e3e03583aab794a2c38231b77ce6927e))
+
 ## [1.8.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.1...v1.8.2) (2023-04-24)
 
 
