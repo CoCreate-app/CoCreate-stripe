@@ -1,3 +1,12 @@
+## [1.8.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.4...v1.8.5) (2023-04-30)
+
+
+### Bug Fixes
+
+* fullscreen target updated to fullscreen fullscreen-target ([285017f](https://github.com/CoCreate-app/CoCreate-stripe/commit/285017fc3c5fd71946003aebb2f8cca49af34774))
+* package-lock.json and pnpm-lock.yaml added to .gitignore ([384c112](https://github.com/CoCreate-app/CoCreate-stripe/commit/384c11233a5dceb1749889a389f3ec30fd08094a))
+* removed toogle fullscreen icons. now using css content ([51ba37f](https://github.com/CoCreate-app/CoCreate-stripe/commit/51ba37f3ae05ffaa75a5910fcf170d4ff9895877))
+
 ## [1.8.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.3...v1.8.4) (2023-04-24)
 
 
