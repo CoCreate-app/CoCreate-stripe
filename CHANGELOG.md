@@ -1,3 +1,10 @@
+## [1.8.8](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.7...v1.8.8) (2023-05-01)
+
+
+### Bug Fixes
+
+* replaced icon toggles with new svg ([4351cf7](https://github.com/CoCreate-app/CoCreate-stripe/commit/4351cf7d0703614b2a81f9da9c17e09481756824))
+
 ## [1.8.7](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.6...v1.8.7) (2023-05-01)
 
 
