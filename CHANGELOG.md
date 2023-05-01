@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.5...v1.8.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([2a4d829](https://github.com/CoCreate-app/CoCreate-stripe/commit/2a4d8290c085494645f585b10a775c887c745fd5))
+
 ## [1.8.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.4...v1.8.5) (2023-04-30)
 
 
