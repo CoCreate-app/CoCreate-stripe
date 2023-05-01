@@ -1,3 +1,10 @@
+## [1.8.7](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.6...v1.8.7) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([fc24ff8](https://github.com/CoCreate-app/CoCreate-stripe/commit/fc24ff8669ba02f8fd06fd9170bc2865eda56425))
+
 ## [1.8.6](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.5...v1.8.6) (2023-05-01)
 
 
