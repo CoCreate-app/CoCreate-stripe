@@ -1,3 +1,11 @@
+## [1.8.10](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.9...v1.8.10) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([e7ea7ee](https://github.com/CoCreate-app/CoCreate-stripe/commit/e7ea7ee4e184b3cfb88258fe7d4cbf02cfe32661))
+* apikey renamed to key ([e0fcc9b](https://github.com/CoCreate-app/CoCreate-stripe/commit/e0fcc9b08d678803277cdf44a5ff651fe78b82be))
+
 ## [1.8.9](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.8...v1.8.9) (2023-05-10)
 
 
