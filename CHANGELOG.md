@@ -1,3 +1,10 @@
+## [1.8.11](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.10...v1.8.11) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([ddfc91b](https://github.com/CoCreate-app/CoCreate-stripe/commit/ddfc91b2b7cc6d88f51f0b34bec0889f74a857b5))
+
 ## [1.8.10](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.9...v1.8.10) (2023-05-10)
 
 
