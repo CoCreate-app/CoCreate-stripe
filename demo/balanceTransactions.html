@@ -1,32 +1,36 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Stripe</title>
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
-    
-    <body>   
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+
+    <body>
         <h1>balanceTransactions.retrieve</h1>
         <form>
-            <input stripe.balanceTransactions.retrieve.balance_transaction value="txn_1032HU2eZvKYlo2CEPtcnUvl">
-            <button actions='balanceTransactions.retrieve' stripe>getBalanceBtn in console</button>
-            <div template="balanceTransactions.retrieve" render-array="available">
+            <input
+                stripe.balancetransactions.retrieve.balance_transaction
+                value="txn_1032HU2eZvKYlo2CEPtcnUvl" />
+            <button actions="balanceTransactions.retrieve" stripe>
+                getBalanceBtn in console
+            </button>
+            <div
+                template="balanceTransactions.retrieve"
+                render-array="available">
                 <span>{{currency}}: </span><span>{{amount}}</span>
             </div>
         </form>
 
-        <br>
+        <br />
 
         <h1>balanceTransactions.list</h1>
-        <button actions='balanceTransactions.list'>Request</button>
+        <button actions="balanceTransactions.list">Request</button>
         <div template="balanceTransactions.list" render-array="data">
             <span>{{data.currency}}: </span><span>{{data.amount}}</span>
         </div>
 
-
         <!--CoCreateJS-->
-        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
         <!--<script src="../dist/CoCreate-stripe.js"></script>-->
-        
-    </body> 
-</html> 
+    </body>
+</html>

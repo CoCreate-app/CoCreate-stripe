@@ -1,17 +1,22 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
- <title>Stripe</title>
- <head>     
-<h1>Test</h1>
-<form stripe>
-    <button actions='balance.retrieve'>getBalanceBtn in console</button>
-</form>
-<div template="balance.retrieve" render-array="available">
-    <span>{{available.currency}}: </span><span>{{available.amount}}</span>
-</div>
+    <head>
+        <title>Stripe</title>
+        <head>
+            <h1>Test</h1>
+            <form stripe>
+                <button actions="balance.retrieve">
+                    getBalanceBtn in console
+                </button>
+            </form>
+            <div template="balance.retrieve" render-array="available">
+                <span>{{available.currency}}: </span
+                ><span>{{available.amount}}</span>
+            </div>
 
-
-<!--CoCreateJS-->
-<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-<!--<script src="../dist/CoCreate-stripe.js"></script>-->
+            <!--CoCreateJS-->
+            <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+            <!--<script src="../dist/CoCreate-stripe.js"></script>-->
+        </head>
+    </head>
+</html>

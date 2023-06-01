@@ -1,27 +1,41 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>charges</title>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+    <body>
+        <div>This is first charge example with customerId and cardDetail</div>
+        <form>
+            <input
+                readonly
+                stripe="charges.create.customer"
+                placeholder="customer"
+                value="cus_L9SWuMA0tudMz4" />
+            <input
+                readonly
+                stripe="charges.create.source"
+                placeholder="token"
+                value="tok_1KTGud2eZvKYlo2CDdy6JeB3" />
+            <input
+                stripe="charges.create.amount"
+                placeholder="Amount"
+                value="2000"
+                type="number" />
+            <input
+                stripe="charges.create.currency"
+                placeholder="Currency"
+                value="usd" />
+            <textarea
+                stripe="charges.create.description"
+                placeholder="Description"></textarea>
 
-<head>
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-<body>
-  
-  <div>This is first charge example with customerId and cardDetail</div>
-  <form>
-    <input readonly stripe="charges.create.customer" placeholder="customer" value="cus_L9SWuMA0tudMz4">
-    <input readonly stripe="charges.create.source" placeholder="token" value="tok_1KTGud2eZvKYlo2CDdy6JeB3">
-    <input stripe="charges.create.amount" placeholder="Amount" value="2000" type="number">
-    <input stripe="charges.create.currency" placeholder="Currency" value="usd">
-    <textarea stripe="charges.create.description" placeholder="Description"></textarea>
-    
-    <button actions="charges.create">Create Charge</button>
-     
-  </form>
-  
-	
-<!--CoCreateJS-->
-<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
+            <button actions="charges.create">Create Charge</button>
+        </form>
 
-<!-- <script src="../../js/Cocreate-stripe.js"></script> -->
-  
-</body>
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
+
+        <!-- <script src="../../js/Cocreate-stripe.js"></script> -->
+    </body>
 </html>
