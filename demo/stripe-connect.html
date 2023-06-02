@@ -1,58 +1,87 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            href="https://cdn.cocreate.app/favicon.ico"
+            type="image/ico"
+            sizes="16x16" />
+        <title>Connect</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
-    <title>Connect</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/latest/CoCreate.min.css"
+            type="text/css" />
+    </head>
 
-    <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css" />
+    <body>
+        <div id="modal-viewport" hidden></div>
+        <div
+            content_id="content"
+            class="nav width:100% display:flex align-items-center bg-light-gray height:50px"
+            scroll-effect="hide-nav"
+            scroll-position="50">
+            <ul
+                class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items-center list-style-type-none">
+                <li>
+                    <a actions="closeModal"><i class="fas fa-times"> </i></a>
+                </li>
+                <li class="margin-right:15px">
+                    <a actions="minMaxModal">
+                        <i
+                            toggle="/assets/svg/window-restore.svg, /assets/svg/window-maximize.svg"
+                            toggle-attribute="src"
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/window-maximize.svg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a actions="parkModal"
+                        ><i class="far fa-window-minimize"> </i
+                    ></a>
+                </li>
+                <li>
+                    <a fullscreen>
+                        <i
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/expand.svg"></i>
+                        <i
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/compress.svg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        actions="pass, openModal"
+                        modal-src="render.html"
+                        pass-collection="modules"
+                        pass-document_id="5dc72c0eb8d9910b2df18fe2"
+                        pass_to="builder"
+                        modal-width="100%">
+                        <i
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/palette.svg"></i>
+                        <div
+                            pass-collection="modules"
+                            pass-document_id="5dd010bccbc25f0cdb1a4d9f"
+                            pass_to="render"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
+        <h2>Connect with cocreate stripe</h2>
+        <a
+            href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_9su9H1OK4WqFG7V6044QFXcFdmCrZZ0b&scope=read_write"
+            target="_blank">
+            Connect <img src="./stripe-connect-button.png" />
+        </a>
+        <!--<a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_9su9CsrV1eEZfWxzy6gdwa0maK4wdKJH&scope=read_write" target="_blank"><img src="https://cocreate.app/consoleold/assets/images/stripe-button.png"></a>-->
 
-
-</head>
-
-<body>
-    <div id="modal-viewport" hidden></div>
-    <div content_id="content" class="nav width:100% display:flex align-items-center bg-light-gray height:50px"
-        scroll-effect="hide-nav" scroll-position="50">
-        <ul class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items-center list-style-type-none">
-            <li><a actions="closeModal"><i class="fas fa-times">
-                    </i></a></li>
-            <li class="margin-right:15px">
-                <a actions="minMaxModal">
-                    <i toggle="/assets/svg/window-restore.svg, /assets/svg/window-maximize.svg" toggle-attribute="src" class="display:flex height:18px fill:#505050" src="/assets/svg/window-maximize.svg"></i>
-                </a>
-            </li>
-            <li><a actions="parkModal"><i class="far fa-window-minimize">
-                    </i></a></li>
-            <li><a fullscreen>
-						<i class="display:flex height:18px fill:#505050" src="/assets/svg/expand.svg"></i>
-						<i class="display:flex height:18px fill:#505050" src="/assets/svg/compress.svg"></i>
-					</a>
-</li>
-            <li>
-                <a actions="pass, openModal" modal-src="render.html" pass-collection="modules"
-                    pass-document_id="5dc72c0eb8d9910b2df18fe2" pass_to="builder" modal-width="100%">
-                    <i class="display:flex height:18px fill:#505050" src="/assets/svg/palette.svg"></i>
-                    <div pass-collection="modules" pass-document_id="5dd010bccbc25f0cdb1a4d9f" pass_to="render">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <h2>Connect with cocreate stripe</h2>
-    <a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_9su9H1OK4WqFG7V6044QFXcFdmCrZZ0b&scope=read_write"
-        target="_blank">
-        Connect -> <img src="./stripe-connect-button.png">
-    </a>
-    <!--<a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_9su9CsrV1eEZfWxzy6gdwa0maK4wdKJH&scope=read_write" target="_blank"><img src="https://cocreate.app/consoleold/assets/images/stripe-button.png"></a>-->
-
-    <!--CoCreateJS-->
-    <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
-
-</body>
-
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+    </body>
 </html>
