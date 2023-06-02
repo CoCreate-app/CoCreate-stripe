@@ -1,3 +1,10 @@
+## [1.8.13](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.12...v1.8.13) (2023-06-02)
+
+
+### Bug Fixes
+
+* format demo html ([9d37df4](https://github.com/CoCreate-app/CoCreate-stripe/commit/9d37df4446d2e8b971d8f7a3ba82dce5a131a056))
+
 ## [1.8.12](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.11...v1.8.12) (2023-05-21)
 
 
