@@ -1,3 +1,11 @@
+## [1.8.15](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.14...v1.8.15) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([4928385](https://github.com/CoCreate-app/CoCreate-stripe/commit/4928385ce89e230fd8d5c0e4fda4a869edb120cb))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([fa04e47](https://github.com/CoCreate-app/CoCreate-stripe/commit/fa04e478a9eb7e30cc445e52501974d26d458098))
+
 ## [1.8.14](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.13...v1.8.14) (2023-06-04)
 
 
