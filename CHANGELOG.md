@@ -1,3 +1,10 @@
+## [1.8.16](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.15...v1.8.16) (2023-06-04)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([7069d73](https://github.com/CoCreate-app/CoCreate-stripe/commit/7069d73c0a73d3b764bf4848fd0e9174c7e02b87))
+
 ## [1.8.15](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.14...v1.8.15) (2023-06-04)
 
 
