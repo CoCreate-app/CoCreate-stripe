@@ -1,3 +1,10 @@
+## [1.8.18](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.17...v1.8.18) (2023-06-10)
+
+
+### Bug Fixes
+
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([81daee9](https://github.com/CoCreate-app/CoCreate-stripe/commit/81daee954a115684fd9b691662e760609f057662))
+
 ## [1.8.17](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.16...v1.8.17) (2023-06-10)
 
 
