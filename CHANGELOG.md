@@ -1,3 +1,10 @@
+## [1.8.19](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.18...v1.8.19) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([4b244b9](https://github.com/CoCreate-app/CoCreate-stripe/commit/4b244b966a9b8914771774544946e7c3b49b5bd2))
+
 ## [1.8.18](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.17...v1.8.18) (2023-06-10)
 
 
