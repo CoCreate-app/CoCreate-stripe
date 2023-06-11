@@ -1,3 +1,10 @@
+## [1.8.21](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.20...v1.8.21) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([c0227f6](https://github.com/CoCreate-app/CoCreate-stripe/commit/c0227f6274cc5f80c1df54e301b07bf1e9ab3f46))
+
 ## [1.8.20](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.19...v1.8.20) (2023-06-11)
 
 
