@@ -1,3 +1,10 @@
+## [1.8.26](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.25...v1.8.26) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([1015429](https://github.com/CoCreate-app/CoCreate-stripe/commit/101542998ad4fff59dc77cc6e87062bc348dc012))
+
 ## [1.8.25](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.24...v1.8.25) (2023-06-11)
 
 
