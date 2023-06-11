@@ -1,3 +1,10 @@
+## [1.8.22](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.21...v1.8.22) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([8021c07](https://github.com/CoCreate-app/CoCreate-stripe/commit/8021c07b6be36e6f6cec058dc4ef2dcd4972c55e))
+
 ## [1.8.21](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.20...v1.8.21) (2023-06-11)
 
 
