@@ -14,7 +14,7 @@
             <button actions="balanceTransactions.retrieve" stripe>
                 getBalanceBtn in console
             </button>
-            <div template="balanceTransactions.retrieve" render="available">
+            <div template>
                 <span>{{currency}}: </span><span>{{amount}}</span>
             </div>
         </form>
@@ -23,7 +23,7 @@
 
         <h1>balanceTransactions.list</h1>
         <button actions="balanceTransactions.list">Request</button>
-        <div template="balanceTransactions.list" render="data">
+        <div template>
             <span>{{data.currency}}: </span><span>{{data.amount}}</span>
         </div>
 

@@ -13,7 +13,7 @@
             <input
                 stripe="customers.create.description"
                 placeholder="description" />
-            <div template_id="customers.create" render-key="data">
+            <div template_id="customers.create" render-as="data">
                 <input readonly placeholder="Customer ID" value="{{data.id}}" />
             </div>
             <button actions="customers.create">Create Customer</button>
