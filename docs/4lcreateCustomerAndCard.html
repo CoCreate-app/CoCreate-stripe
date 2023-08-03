@@ -29,8 +29,8 @@
         <link
             rel="stylesheet"
             href="/docs/index.css"
-            collection="files"
-            document_id="60888216117c640e7596303f"
+            array="files"
+            object="60888216117c640e7596303f"
             name="src"
             type="text/css"
             save="true" />
@@ -44,8 +44,8 @@
             scroll="sticky-nav,hide-nav"
             scroll-up="10"
             scroll-down="10"
-            collection="files"
-            document_id="60395ef42b3ac232657040fd"
+            array="files"
+            object="60395ef42b3ac232657040fd"
             name="src"></nav>
         <sidenav
             id="menuL"
@@ -55,8 +55,8 @@
             resize-property="margin-left"
             resize-value="width">
             <menu
-                collection="files"
-                document_id="603717b07de7fb350ae9fec8"
+                array="files"
+                object="603717b07de7fb350ae9fec8"
                 name="src"></menu>
             <div resize="right"></div>
         </sidenav>
@@ -226,7 +226,7 @@ Name-file : index-connect.html
 var SessionStorage = window.sessionStorage
 
 function sendDataWebSocket(type,idCustomer=null){
-  var btn = document.querySelector(&#x27;button#register&#x27;);
+  var btn = object.querySelector(&#x27;button#register&#x27;);
   let dataToSend = cocreateStripeRegisterAPi.getDataJSON(btn,cocreateStripeRegisterAPi);
   dataToSend[&#x27;type&#x27;] = type;
   if (idCustomer!=null){
@@ -306,11 +306,11 @@ var CocreateStripeAPi = function() {
                 var localstorage = window.sessionStorage;
                 localstorage[&#x27;customer_id&#x27;] = data[&#x27;response&#x27;][&#x22;id&#x22;];
                 if (data[&#x27;response&#x27;]){
-                    document.dispatchEvent(new CustomEvent(&#x27;eventRegisterCustomer&#x27;));
+                    object.dispatchEvent(new CustomEvent(&#x27;eventRegisterCustomer&#x27;));
                 }
             break;
             case &#x27;.createCardBtn&#x27;:
-                document.dispatchEvent(new CustomEvent(&#x27;eventRegisterCard&#x27;));
+                object.dispatchEvent(new CustomEvent(&#x27;eventRegisterCard&#x27;));
             break;
         }
     
@@ -367,8 +367,8 @@ var CocreateStripeAPi = function() {
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id=""
+                                    array="demos"
+                                    object=""
                                     name="demo"
                                     save="false"
                                     id="demo"

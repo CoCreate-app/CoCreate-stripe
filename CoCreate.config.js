@@ -4,8 +4,8 @@ module.exports = {
     "host": "",
     "sources": [
         {
-            "collection": "files",
-            "document": {
+            "array": "files",
+            "object": {
                 "_id": "6029aeb8e979fb17407e25d7",
                 "name": "index.html",
                 "path": "/docs/stripe/index.html",
