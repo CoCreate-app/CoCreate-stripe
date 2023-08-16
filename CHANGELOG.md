@@ -1,3 +1,19 @@
+# [1.9.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.30...v1.9.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([9c068c1](https://github.com/CoCreate-app/CoCreate-stripe/commit/9c068c10aef36a28add6556c83f02a2eab757326))
+* render-array and render-object attributes renamed to render ([c2b06f4](https://github.com/CoCreate-app/CoCreate-stripe/commit/c2b06f4a6022ab693ba0494cd0fa9df97c06b06e))
+* replace -target -selector ([efe4df6](https://github.com/CoCreate-app/CoCreate-stripe/commit/efe4df6e5abce3fc98ef8c041c5d739052ced19a))
+* webpack.config and package.json make use of mode=production instead of process.env ([2840d68](https://github.com/CoCreate-app/CoCreate-stripe/commit/2840d682171531ab963718f3f34d393374c144fc))
+
+
+### Features
+
+* name attribute and variable renamed to key ([e63f4fc](https://github.com/CoCreate-app/CoCreate-stripe/commit/e63f4fc9f0922a6795ec28dc9548b24095b7a77b))
+* update template_id to render-selector attribute. update filter attributes to filter selector-attributes ([0dab97a](https://github.com/CoCreate-app/CoCreate-stripe/commit/0dab97ab8f64520841de1bc430346d1c8d453d78))
+
 ## [1.8.30](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.29...v1.8.30) (2023-06-14)
 
 
