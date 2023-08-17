@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.9.0...v1.10.0) (2023-08-17)
+
+
+### Features
+
+* bump cocreate dependencies for the latest updates and features ([136e7a7](https://github.com/CoCreate-app/CoCreate-stripe/commit/136e7a734b2d3f676ee4e7b450ebea72a5b58c52))
+
 # [1.9.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.8.30...v1.9.0) (2023-08-16)
 
 
