@@ -97,13 +97,8 @@ Name-file : index-connect.html
 &#x3C;form realtime=&#x22;true&#x22; id=&#x22;customer-form&#x22; array=&#x22;modules&#x22;&#x3E;
  &#x3C;button class=&#x27;getBalanceBtn&#x27;&#x3E;getBalanceBtn in console&#x3C;/button&#x3E;
 &#x3C;/form&#x3E;
-&#x3C;script&#x3E;
-    var CoCreateConfig = {
-      key: &#x27;2061acef-0451-4545-f754-60cf8160&#x27;,
-      organization_id: &#x27;5ff747727005da1c272740ab&#x27;
-    }
-&#x3C;/script&#x3E;
-&#x3C;script src=&#x22;https://cdn.cocreate.app/latest/CoCreate.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+
+&#x3C;script src=&#x22;/dist/CoCreate.js&#x22;&#x3E;&#x3C;/script&#x3E;
 &#x3C;script src=&#x22;../js/Cocreate-APISocket.js&#x22;&#x3E;&#x3C;/script&#x3E;
 &#x3C;script src=&#x22;../js/Cocreate-stripe.js&#x22;&#x3E;&#x3C;/script&#x3E;                                
                                 </code>
@@ -234,7 +229,7 @@ this.wsManager.on('stripe',(socket, data)=&lt;this.sendStripe(socket,data));
 		</main>
 		
  		<script src="./apikey.js"></script>
-        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+        <script src="/dist/CoCreate.js"></script>
         
     </body>
 </html>
