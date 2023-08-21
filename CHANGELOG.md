@@ -1,3 +1,12 @@
+## [1.10.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.10.0...v1.10.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([3b49975](https://github.com/CoCreate-app/CoCreate-stripe/commit/3b49975b8a84bcbe0aaf52bbed7f5ea0bcb95e70))
+* replace cdn with /dist ([4cb3dab](https://github.com/CoCreate-app/CoCreate-stripe/commit/4cb3dab214e53609ffa9d1423f7ed320497900bc))
+* update file uploader ([a4ad04c](https://github.com/CoCreate-app/CoCreate-stripe/commit/a4ad04cc44b41d8466930c33157d99f3fd78b204))
+
 # [1.10.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.9.0...v1.10.0) (2023-08-17)
 
 
