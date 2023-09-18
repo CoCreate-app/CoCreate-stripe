@@ -1,3 +1,11 @@
+## [1.11.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.11.1...v1.11.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([8f60f0e](https://github.com/CoCreate-app/CoCreate-stripe/commit/8f60f0e778b7b089c59e68ab97ec62172315c785))
+* Update CoCreate depndencies to latest versions ([4eea34c](https://github.com/CoCreate-app/CoCreate-stripe/commit/4eea34c42df09487824192c057645c7ef5323c29))
+
 ## [1.11.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.11.0...v1.11.1) (2023-08-21)
 
 
