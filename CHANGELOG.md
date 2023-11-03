@@ -1,3 +1,12 @@
+## [1.12.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.12.4...v1.12.5) (2023-11-03)
+
+
+### Bug Fixes
+
+* favicon.ico path ([34c5a42](https://github.com/CoCreate-app/CoCreate-stripe/commit/34c5a420d94718ee079f4f988f721fdca513fb72))
+* removed apikey.js ([0079847](https://github.com/CoCreate-app/CoCreate-stripe/commit/00798477df923bd1e473cd1638903a89e2148382))
+* update dependencies to the lates versions ([114ef55](https://github.com/CoCreate-app/CoCreate-stripe/commit/114ef557be6f2cc8d4ba2f480d2a65eeca7587c2))
+
 ## [1.12.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.12.3...v1.12.4) (2023-10-25)
 
 
