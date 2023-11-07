@@ -12,8 +12,7 @@ module.exports = {
                 "pathname": "/docs/stripe/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "stripe",
                 "content-type": "{{content-type}}",
