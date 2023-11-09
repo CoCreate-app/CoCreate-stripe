@@ -1,3 +1,11 @@
+## [1.12.6](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.12.5...v1.12.6) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([4c0ac37](https://github.com/CoCreate-app/CoCreate-stripe/commit/4c0ac37d1a1544d618193a280eef5c44ed24b9b5))
+* update host ([9a599bb](https://github.com/CoCreate-app/CoCreate-stripe/commit/9a599bba1321c873772e7ed4c681b1517d33b2fc))
+
 ## [1.12.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.12.4...v1.12.5) (2023-11-03)
 
 
