@@ -1,3 +1,16 @@
+# [1.14.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.13.0...v1.14.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* pass attributes renamed to state ([20008ab](https://github.com/CoCreate-app/CoCreate-stripe/commit/20008aba75ba5aeb254bac02bc9724c8f9c12b23))
+* update nav, edit button and css path ([2b31b9b](https://github.com/CoCreate-app/CoCreate-stripe/commit/2b31b9b74cd7a350631d399d022485d40fed94e1))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([9ef4fe9](https://github.com/CoCreate-app/CoCreate-stripe/commit/9ef4fe95eb1d61624b2d559947d9f25e7625aa5c))
+
 # [1.13.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.12.7...v1.13.0) (2023-11-19)
 
 
