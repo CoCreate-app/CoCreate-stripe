@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.15.0...v1.15.1) (2023-11-26)
+
+
+### Bug Fixes
+
+* update licensing details ([27a557d](https://github.com/CoCreate-app/CoCreate-stripe/commit/27a557dca70d7ec004a5480f5ebd97b274841ee1))
+
 # [1.15.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.14.0...v1.15.0) (2023-11-25)
 
 
