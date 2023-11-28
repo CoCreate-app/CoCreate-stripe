@@ -10,11 +10,11 @@ class CoCreateStripe {
 
     init() {
         if (this.wsManager) {
-            this.wsManager.on('stripe', (socket, data) => this.sendStripe(socket, data));
+            this.wsManager.on('stripe', (socket, data) => this.send(socket, data));
         }
     }
 
-    async sendStripe(socket, data) {
+    async send(socket, data) {
         let params = data['data'];
         let environment;
         let action = data['action'];
@@ -69,8 +69,45 @@ class CoCreateStripe {
                     delete params['customer'];
                     response = await stripe.customers.createSource(customer, params);
                     break;
+                case 'paymentIntents.create':
+                    response = await stripe.paymentIntents.create(data.paymentIntents);
+                    break;
+                case 'checkout.sessions':
+                    response = await stripe.checkout.sessions.retrieve(data.sessionId);
+
+                    // Check if the session has a customer associated with it
+                    // if (session.customer) {
+                    //     return session.customer; // This is the Customer ID
+                    // } else {
+                    //     console.log('No customer associated with this session.');
+                    //     return null;
+                    // }
+                    break;
             }
-            this.wsManager.send(socket, { method: this.name, action, response })
+            this.wsManager.send({ socket, method: this.name, action, response })
+
+        } catch (error) {
+            this.handleError(socket, action, error)
+        }
+    }// end send
+
+    async webhooks(req, res) {
+        try {
+            switch (req.method) {
+                case 'POST':
+                case 'PUT':
+                    // Process the rawData for POST and PUT requests
+                    // Example: JSON.parse(rawData) if the data is in JSON format
+                    break;
+                case 'GET':
+                case 'DELETE':
+                    // Typically, GET and DELETE don't have a body, handle accordingly
+                    break;
+                // Add other cases as needed
+            }
+
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ message: 'Request processed successfully' }));
 
         } catch (error) {
             this.handleError(socket, action, error)
@@ -82,7 +119,7 @@ class CoCreateStripe {
             'object': 'error',
             'data': error || error.response || error.response.data || error.response.body || error.message || error,
         };
-        this.wsManager.send(socket, { method: this.name, action, response })
+        this.wsManager.send({ socket, method: this.name, action, response })
     }
 }
 
