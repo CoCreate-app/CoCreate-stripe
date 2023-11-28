@@ -6,7 +6,7 @@ async function send(data) {
     let stripe = false;
 
     try {
-        let key = data.apis[environment];
+        let key = data.apis[environment].key;
         stripe = require('stripe')(key);
     } catch (e) {
         console.log(name + " : Error Connect to api", e)
@@ -68,28 +68,64 @@ async function send(data) {
     }
 }
 
+
 async function webhooks(data) {
     try {
+        let environment = data.environment || 'production';
+        let stripe = false;
+
+        try {
+            let key = data.apis[environment].key;
+            stripe = require('stripe')(key);
+        } catch (e) {
+            console.log(name + " : Error Connect to api", e)
+        }
+
+        let name = data.req.url.split('/');
+        name = name[3] || name[2] || name[1]
+        const webhookSecret = data.apis[environment].webhooks[name];
+
         switch (data.req.method) {
             case 'POST':
             case 'PUT':
-                // Process the rawData for POST and PUT requests
-                // Example: JSON.parse(rawData) if the data is in JSON format
+                const sig = data.req.headers['stripe-signature'];
+                let event;
+
+                // Verify the event by signature
+                try {
+                    event = stripe.webhooks.constructEvent(data.req.rawBody, sig, webhookSecret);
+                } catch (err) {
+                    data.res.writeHead(400, { 'Content-Type': 'text/plain' });
+                    return data.res.end(`Webhook Error: ${err.message}`);
+                }
+
+                // Handle the event
+                switch (event.type) {
+                    case 'checkout.session.completed':
+                        const session = event.data.object;
+                        // Process the session object as needed
+                        break;
+                    // Handle other event types
+                    default:
+                        console.log(`Unhandled event type ${event.type}`);
+                }
                 break;
+
             case 'GET':
             case 'DELETE':
-                // Typically, GET and DELETE don't have a body, handle accordingly
+                // Handle GET and DELETE requests if necessary
                 break;
             // Add other cases as needed
         }
 
         data.res.writeHead(200, { 'Content-Type': 'application/json' });
-        data.res.end(JSON.stringify({ message: 'Request processed successfully' }));
+        data.res.end(JSON.stringify({ message: 'Webhook received and processed' }));
 
     } catch (error) {
-        handleError(data, error)
+        handleError(data, error);
     }
-}// end sendStripe
+}
+
 
 function handleError(data, error) {
     data.error = error.message
