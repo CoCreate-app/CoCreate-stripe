@@ -73,8 +73,21 @@ async function send(data) {
                 // Create the subscription
                 const subscription = await stripe.subscriptions.create({
                     customer: customer.id,
-                    items: [{ price: data.stripe.price }], // Replace with your actual price ID
+                    items: [{ price: data.stripe.price }],
                 });
+
+                await data.crud.send({
+                    socket: data.socket,
+                    broadcast: false,
+                    broadcastSender: true,
+                    method: 'object.update',
+                    array: 'users',
+                    object: {
+                        _id: data.user_id,
+                        subscription: data.stripe.subscription_id
+                    },
+                    organization_id: data.organization_id
+                })
 
                 data.stripe.customer = customer
                 data.stripe.subscription = subscription
