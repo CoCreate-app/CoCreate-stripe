@@ -2,6 +2,8 @@
 const name = 'stripe'
 
 async function send(data) {
+    if (data.req)
+        return await webhooks(data)
     let environment = data.environment || 'production';
     let stripe = false;
 
@@ -13,7 +15,7 @@ async function send(data) {
     }
 
     try {
-        switch (data.action) {
+        switch (data.method.replace('stripe.', '')) {
             case 'customers.list':
                 data.stripe = await stripe.customers.list();
                 break;
@@ -59,6 +61,24 @@ async function send(data) {
                 //     return null;
                 // }
                 break;
+            case 'subscriptions.create':
+                // Create a new customer
+                const customer = await stripe.customers.create({
+                    email: data.stripe.email,
+                    source: data.stripe.token,
+                    name: data.stripe.name,
+                    // ... [add other customer details as necessary] ...
+                });
+
+                // Create the subscription
+                const subscription = await stripe.subscriptions.create({
+                    customer: customer.id,
+                    items: [{ price: data.stripe.price }], // Replace with your actual price ID
+                });
+
+                data.stripe.customer = customer
+                data.stripe.subscription = subscription
+                break;
         }
 
         return data
@@ -85,6 +105,19 @@ async function webhooks(data) {
         name = name[3] || name[2] || name[1]
         const webhookSecret = data.apis[environment].webhooks[name];
 
+        let rawBody = '';
+        await new Promise((resolve, reject) => {
+            data.req.on('data', chunk => {
+                rawBody += chunk.toString();
+            });
+            data.req.on('end', () => {
+                resolve();
+            });
+            data.req.on('error', (err) => {
+                reject(err);
+            });
+        });
+
         switch (data.req.method) {
             case 'POST':
             case 'PUT':
@@ -93,7 +126,7 @@ async function webhooks(data) {
 
                 // Verify the event by signature
                 try {
-                    event = stripe.webhooks.constructEvent(data.req.rawBody, sig, webhookSecret);
+                    event = stripe.webhooks.constructEvent(rawBody, sig, webhookSecret);
                 } catch (err) {
                     data.res.writeHead(400, { 'Content-Type': 'text/plain' });
                     return data.res.end(`Webhook Error: ${err.message}`);
@@ -103,6 +136,8 @@ async function webhooks(data) {
                 switch (event.type) {
                     case 'checkout.session.completed':
                         const session = event.data.object;
+                        const userId = session.metadata.user_id;
+                        console.log('userId', userId)
                         // Process the session object as needed
                         break;
                     // Handle other event types
