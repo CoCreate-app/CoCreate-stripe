@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.16.0...v1.17.0) (2023-12-09)
+
+
+### Features
+
+* support webhook secrets ([8f173cf](https://github.com/CoCreate-app/CoCreate-stripe/commit/8f173cf9cb42636c293133d3c86d245b0d590ece))
+
 # [1.16.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.15.1...v1.16.0) (2023-12-09)
 
 
