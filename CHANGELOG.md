@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.17.0...v1.17.1) (2023-12-09)
+
+
+### Bug Fixes
+
+* if data.req return webhook and data.method replaces data.action ([2585d3a](https://github.com/CoCreate-app/CoCreate-stripe/commit/2585d3a6a8f44e3c808c75d1a0c309f6ee55f189))
+
 # [1.17.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.16.0...v1.17.0) (2023-12-09)
 
 
