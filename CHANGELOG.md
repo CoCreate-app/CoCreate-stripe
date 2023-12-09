@@ -1,3 +1,17 @@
+# [1.16.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.15.1...v1.16.0) (2023-12-09)
+
+
+### Bug Fixes
+
+* bumped stripe ([dac101f](https://github.com/CoCreate-app/CoCreate-stripe/commit/dac101f11a7b2180801a2ca91ad04fbbb528632d))
+* getOrg() renamed to getOrganization() ([e397042](https://github.com/CoCreate-app/CoCreate-stripe/commit/e397042d48eb8aa711cae37d9640018934447a38))
+
+
+### Features
+
+* simplified usage to support lazyloader ([62e520b](https://github.com/CoCreate-app/CoCreate-stripe/commit/62e520b07d31ca7153454d5f5b809d462a51f8ad))
+* support defining webhooks ([de7e4c0](https://github.com/CoCreate-app/CoCreate-stripe/commit/de7e4c0a20932154570c36b38dcba14676ded23b))
+
 ## [1.15.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.15.0...v1.15.1) (2023-11-26)
 
 
