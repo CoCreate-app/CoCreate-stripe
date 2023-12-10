@@ -1,3 +1,10 @@
+## [1.17.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.17.1...v1.17.2) (2023-12-10)
+
+
+### Bug Fixes
+
+* update users  subscription ([152c6dc](https://github.com/CoCreate-app/CoCreate-stripe/commit/152c6dc6130529e2c728ec206ae4288d67c9fceb))
+
 ## [1.17.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.17.0...v1.17.1) (2023-12-09)
 
 
