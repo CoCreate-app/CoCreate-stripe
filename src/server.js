@@ -71,10 +71,28 @@ async function send(data) {
                 });
 
                 // Create the subscription
+                // const subscription = await stripe.subscriptions.create({
+                //     customer: customer.id,
+                //     items: [{ price: data.stripe.price }],
+                // });
+
                 const subscription = await stripe.subscriptions.create({
                     customer: customer.id,
-                    items: [{ price: data.stripe.price }],
+                    items: [{ price: data.stripe.discountPriceId }], // Price ID for the first month ($0.99)
+                    trial_period_days: data.stripe.trial_period_days, // Set the trial period for the duration of the first month
+                    expand: ['latest_invoice.payment_intent'],
                 });
+
+                // Update the subscription to add the regular price after the trial period
+                await stripe.subscriptions.update(subscription.id, {
+                    items: [
+                        {
+                            id: subscription.items.data[0].id,
+                            price: data.stripe.priceId, // Price ID for the regular price
+                        },
+                    ],
+                });
+
 
                 await data.crud.send({
                     socket: data.socket,
