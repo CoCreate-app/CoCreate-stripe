@@ -61,6 +61,9 @@ async function send(data) {
                 //     return null;
                 // }
                 break;
+            case 'subscriptions.del':
+                data.stripe = await stripe.subscriptions.del(data.stripe.subscriptionId);
+                break;
             case 'subscriptions.create':
                 // Create a new customer
                 const customer = await stripe.customers.create({
