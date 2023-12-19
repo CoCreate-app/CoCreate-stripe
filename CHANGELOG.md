@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.17.2...v1.18.0) (2023-12-19)
+
+
+### Features
+
+* define discount price and trial period ([27dcb5f](https://github.com/CoCreate-app/CoCreate-stripe/commit/27dcb5f12f0a48edd3c7d90a6fd402e153ff8578))
+
 ## [1.17.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.17.1...v1.17.2) (2023-12-10)
 
 
