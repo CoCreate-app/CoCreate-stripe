@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.18.0...v1.19.0) (2023-12-20)
+
+
+### Features
+
+* subscriptions.del ([662f57f](https://github.com/CoCreate-app/CoCreate-stripe/commit/662f57f053bfc57bc883dbadc6f4f83141561bff))
+
 # [1.18.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.17.2...v1.18.0) (2023-12-19)
 
 
