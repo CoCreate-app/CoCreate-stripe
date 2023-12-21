@@ -68,52 +68,7 @@ async function send(data) {
                 data.stripe = await stripe.subscriptions.del(data.stripe.subscriptionId);
                 break;
             case 'subscriptions.create':
-                // Create a new customer
-                const customer = await stripe.customers.create({
-                    email: data.stripe.email,
-                    source: data.stripe.token,
-                    name: data.stripe.name,
-                    // ... [add other customer details as necessary] ...
-                });
-
-                // Create the subscription
-                // const subscription = await stripe.subscriptions.create({
-                //     customer: customer.id,
-                //     items: [{ price: data.stripe.price }],
-                // });
-
-                const subscription = await stripe.subscriptions.create({
-                    customer: customer.id,
-                    items: [{ price: data.stripe.discountPriceId }], // Price ID for the first month ($0.99)
-                    expand: ['latest_invoice.payment_intent'],
-                });
-
-                // Update the subscription to add the regular price after the trial period
-                await stripe.subscriptions.update(subscription.id, {
-                    items: [
-                        {
-                            id: subscription.items.data[0].id,
-                            price: data.stripe.priceId, // Price ID for the regular price
-                        },
-                    ],
-                });
-
-
-                await data.crud.send({
-                    socket: data.socket,
-                    broadcast: false,
-                    broadcastSender: true,
-                    method: 'object.update',
-                    array: 'users',
-                    object: {
-                        _id: data.user_id,
-                        subscription: data.stripe.subscription_id
-                    },
-                    organization_id: data.organization_id
-                })
-
-                data.stripe.customer = customer
-                data.stripe.subscription = subscription
+                data.stripe = await stripe.subscriptions.create(data.stripe);
                 break;
         }
 
