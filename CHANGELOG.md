@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.20.0...v1.20.1) (2023-12-21)
+
+
+### Bug Fixes
+
+* removed trial period ([13635cc](https://github.com/CoCreate-app/CoCreate-stripe/commit/13635cc0739bde51aad93c6e7e10ef8b78a2bb7e))
+
 # [1.20.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.19.0...v1.20.0) (2023-12-21)
 
 
