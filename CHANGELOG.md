@@ -1,3 +1,11 @@
+# [1.20.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.19.0...v1.20.0) (2023-12-21)
+
+
+### Features
+
+* customer.subscription.deleted webhook ([75a7a18](https://github.com/CoCreate-app/CoCreate-stripe/commit/75a7a182159a9d4e2e51e382a0c9e25b1a4c4eaf))
+* suscription.update ([16f7634](https://github.com/CoCreate-app/CoCreate-stripe/commit/16f7634e7bdc7f0adcba1c6213d37e64bba79d72))
+
 # [1.19.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.18.0...v1.19.0) (2023-12-20)
 
 
