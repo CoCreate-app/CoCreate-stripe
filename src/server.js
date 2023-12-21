@@ -85,7 +85,6 @@ async function send(data) {
                 const subscription = await stripe.subscriptions.create({
                     customer: customer.id,
                     items: [{ price: data.stripe.discountPriceId }], // Price ID for the first month ($0.99)
-                    trial_period_days: data.stripe.trial_period_days, // Set the trial period for the duration of the first month
                     expand: ['latest_invoice.payment_intent'],
                 });
 
