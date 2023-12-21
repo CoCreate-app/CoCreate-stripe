@@ -172,6 +172,27 @@ async function webhooks(data) {
 
                 // Handle the event
                 switch (event.type) {
+                    case 'customer.subscription.deleted':
+                        let subscription = event.data.object; // The subscription object
+                        let subscriptionId = subscription.id;
+
+                        await data.crud.send({
+                            broadcast: false,
+                            broadcastSender: true,
+                            method: 'object.update',
+                            array: 'users',
+                            object: {
+                                subscription: 'canceled'
+                            },
+                            $filter: {
+                                query: [
+                                    { key: 'subscriptionId', value: subscriptionId, operator: '$eq' }
+                                ]
+                            },
+                            organization_id: data.organization_id
+                        })
+
+                        break;
                     case 'checkout.session.completed':
                         const session = event.data.object;
                         const userId = session.metadata.user_id;
