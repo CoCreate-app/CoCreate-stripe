@@ -61,6 +61,9 @@ async function send(data) {
                 //     return null;
                 // }
                 break;
+            case 'subscriptions.update':
+                data.stripe = await stripe.subscriptions.update(data.stripe.subscriptionId, data.stripe.subscriptions);
+                break;
             case 'subscriptions.del':
                 data.stripe = await stripe.subscriptions.del(data.stripe.subscriptionId);
                 break;
@@ -118,7 +121,8 @@ async function send(data) {
         return data
 
     } catch (error) {
-        handleError(data, error)
+        data.error = error.message
+        return data
     }
 }
 
@@ -191,14 +195,9 @@ async function webhooks(data) {
         data.res.end(JSON.stringify({ message: 'Webhook received and processed' }));
 
     } catch (error) {
-        handleError(data, error);
+        data.error = error.message
+        return data
     }
-}
-
-
-function handleError(data, error) {
-    data.error = error.message
-    data.wsManager.send(data)
 }
 
 module.exports = { send, webhooks };
