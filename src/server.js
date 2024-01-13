@@ -139,9 +139,7 @@ async function webhooks(data) {
                                 subscription: 'canceled'
                             },
                             $filter: {
-                                query: [
-                                    { key: 'subscriptionId', value: subscriptionId, operator: '$eq' }
-                                ]
+                                query: { subscriptionId }
                             },
                             organization_id: data.organization_id
                         })
