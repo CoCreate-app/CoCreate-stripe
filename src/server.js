@@ -151,6 +151,60 @@ async function webhooks(data) {
                         console.log('userId', userId)
                         // Process the session object as needed
                         break;
+                    case 'invoice.payment_succeeded':
+                        const invoice = event.data.object;
+                        const user = await data.crud.send({
+                            broadcast: false,
+                            broadcastSender: true,
+                            method: 'object.read',
+                            array: 'users',
+                            $filter: {
+                                query: { customerId: invoice.customer }
+                            },
+                            organization_id: data.organization_id
+                        })
+
+                        if (user.object && user.object[0] && user.object[0]) {
+                            await data.crud.send({
+                                broadcast: false,
+                                broadcastSender: true,
+                                method: 'object.create',
+                                array: 'payments',
+                                object: {
+                                    amount: invoice.amount_paid,
+                                    user_id: user.object[0]._id,
+                                    customerId: "cus_PMXGtRpggO0gwd",
+                                    subscription: user.subscription,
+                                    subscriptionId: invoice.subscription,
+                                    ambassador: user.ambassador
+                                },
+                                organization_id: data.organization_id
+                            })
+
+                            if (user.object[0].ambassador) {
+                                await data.crud.send({
+                                    broadcast: false,
+                                    broadcastSender: true,
+                                    method: 'object.update',
+                                    array: 'payouts',
+                                    object: {
+                                        $inc: { amount: (invoice.amount_paid * 0.15) / 100 },
+                                        user_id: user.object[0]._id,
+                                        ambassador: user.ambassador,
+                                        status: "pending",
+                                    },
+                                    $filter: {
+                                        query: {
+                                            ambassador: user.ambassador,
+                                            status: 'pending'
+                                        }
+                                    },
+                                    upsert: true,
+                                    organization_id: data.organization_id
+                                })
+                            }
+                        }
+                        break;
                     // Handle other event types
                     default:
                         console.log(`Unhandled event type ${event.type}`);
