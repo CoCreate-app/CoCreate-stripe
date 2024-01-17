@@ -1,3 +1,16 @@
+# [1.21.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.20.2...v1.21.0) (2024-01-17)
+
+
+### Bug Fixes
+
+* handle test keys using host ([3086614](https://github.com/CoCreate-app/CoCreate-stripe/commit/308661423074010a8b26654e95d0a1e56d62a112))
+* update to support new query system ([894378a](https://github.com/CoCreate-app/CoCreate-stripe/commit/894378afc3bc8bf52ba5fa70d7003181a56be5f4))
+
+
+### Features
+
+* handle invoice webhook ([05d1bb2](https://github.com/CoCreate-app/CoCreate-stripe/commit/05d1bb2ffaf5c7c2f631752a7ab5cf3769a0ea86))
+
 ## [1.20.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.20.1...v1.20.2) (2023-12-21)
 
 
