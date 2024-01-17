@@ -84,6 +84,8 @@ async function send(data) {
 async function webhooks(data) {
     try {
         let environment = data.environment || 'production';
+        if (data.host.startsWith('dev.') || data.host.startsWith('test.'))
+            environment = 'test'
         let stripe = false;
 
         try {
@@ -121,7 +123,8 @@ async function webhooks(data) {
                     event = stripe.webhooks.constructEvent(rawBody, sig, webhookSecret);
                 } catch (err) {
                     data.res.writeHead(400, { 'Content-Type': 'text/plain' });
-                    return data.res.end(`Webhook Error: ${err.message}`);
+                    data.res.end(`Webhook Error: ${err.message}`);
+                    return data
                 }
 
                 // Handle the event
@@ -131,6 +134,7 @@ async function webhooks(data) {
                         let subscriptionId = subscription.id;
 
                         await data.crud.send({
+                            host: data.host,
                             broadcast: false,
                             broadcastSender: true,
                             method: 'object.update',
@@ -154,6 +158,7 @@ async function webhooks(data) {
                     case 'invoice.payment_succeeded':
                         const invoice = event.data.object;
                         const user = await data.crud.send({
+                            host: data.host,
                             broadcast: false,
                             broadcastSender: true,
                             method: 'object.read',
@@ -166,6 +171,7 @@ async function webhooks(data) {
 
                         if (user.object && user.object[0] && user.object[0]) {
                             await data.crud.send({
+                                host: data.host,
                                 broadcast: false,
                                 broadcastSender: true,
                                 method: 'object.create',
@@ -173,16 +179,17 @@ async function webhooks(data) {
                                 object: {
                                     amount: invoice.amount_paid,
                                     user_id: user.object[0]._id,
-                                    customerId: "cus_PMXGtRpggO0gwd",
-                                    subscription: user.subscription,
+                                    customerId: invoice.customer,
+                                    subscription: user.object[0].subscription,
                                     subscriptionId: invoice.subscription,
-                                    ambassador: user.ambassador
+                                    ambassador: user.object[0].ambassador
                                 },
                                 organization_id: data.organization_id
                             })
 
                             if (user.object[0].ambassador) {
                                 await data.crud.send({
+                                    host: data.host,
                                     broadcast: false,
                                     broadcastSender: true,
                                     method: 'object.update',
@@ -190,12 +197,12 @@ async function webhooks(data) {
                                     object: {
                                         $inc: { amount: (invoice.amount_paid * 0.15) / 100 },
                                         user_id: user.object[0]._id,
-                                        ambassador: user.ambassador,
+                                        ambassador: user.object[0].ambassador,
                                         status: "pending",
                                     },
                                     $filter: {
                                         query: {
-                                            ambassador: user.ambassador,
+                                            ambassador: user.object[0].ambassador,
                                             status: 'pending'
                                         }
                                     },
@@ -220,7 +227,7 @@ async function webhooks(data) {
 
         data.res.writeHead(200, { 'Content-Type': 'application/json' });
         data.res.end(JSON.stringify({ message: 'Webhook received and processed' }));
-
+        return data
     } catch (error) {
         data.error = error.message
         return data
