@@ -2,19 +2,15 @@
 const name = 'stripe'
 
 async function send(data) {
-    if (data.req)
-        return await webhooks(data)
-    let environment = data.environment || 'production';
-    let stripe = false;
-
     try {
-        let key = data.apis[environment].key;
-        stripe = require('stripe')(key);
-    } catch (e) {
-        console.log(name + " : Error Connect to api", e)
-    }
 
-    try {
+        if (data.req)
+            return await webhooks(data)
+
+        const environment = data.environment || 'production';
+        const key = data.apis[environment].key;
+        const stripe = require('stripe')(key);
+
         switch (data.method.replace('stripe.', '')) {
             case 'customers.list':
                 data.stripe = await stripe.customers.list();
@@ -86,18 +82,11 @@ async function webhooks(data) {
         let environment = data.environment || 'production';
         if (data.host.startsWith('dev.') || data.host.startsWith('test.'))
             environment = 'test'
-        let stripe = false;
 
-        try {
-            let key = data.apis[environment].key;
-            stripe = require('stripe')(key);
-        } catch (e) {
-            console.log(name + " : Error Connect to api", e)
-        }
-
+        const key = data.apis[environment].key;
+        const stripe = require('stripe')(key);
         let name = data.req.url.split('/');
         name = name[3] || name[2] || name[1]
-        const webhookSecret = data.apis[environment].webhooks[name];
 
         let rawBody = '';
         await new Promise((resolve, reject) => {
@@ -112,21 +101,13 @@ async function webhooks(data) {
             });
         });
 
+        const webhookSecret = data.apis[environment].webhooks[name];
+        const sig = data.req.headers['stripe-signature'];
+        const event = stripe.webhooks.constructEvent(rawBody, sig, webhookSecret);
+
         switch (data.req.method) {
             case 'POST':
             case 'PUT':
-                const sig = data.req.headers['stripe-signature'];
-                let event;
-
-                // Verify the event by signature
-                try {
-                    event = stripe.webhooks.constructEvent(rawBody, sig, webhookSecret);
-                } catch (err) {
-                    data.res.writeHead(400, { 'Content-Type': 'text/plain' });
-                    data.res.end(`Webhook Error: ${err.message}`);
-                    return data
-                }
-
                 // Handle the event
                 switch (event.type) {
                     case 'customer.subscription.deleted':
@@ -230,6 +211,8 @@ async function webhooks(data) {
         return data
     } catch (error) {
         data.error = error.message
+        data.res.writeHead(400, { 'Content-Type': 'text/plain' });
+        data.res.end(`Webhook Error: ${err.message}`);
         return data
     }
 }
