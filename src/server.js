@@ -12,6 +12,9 @@ async function send(data) {
         const stripe = require('stripe')(key);
 
         switch (data.method.replace('stripe.', '')) {
+            case 'accounts.create':
+                data.stripe = await stripe.accounts.create(data.stripe);
+                break;
             case 'customers.list':
                 data.stripe = await stripe.customers.list();
                 break;
@@ -21,6 +24,9 @@ async function send(data) {
             case 'customers.update':
                 delete data.stripe['customer'];
                 data.stripe = await stripe.customers.update(customer, data.stripe);
+                break;
+            case 'customers.createSource':
+                data.stripe = await stripe.customers.createSource(customer, data.stripe);
                 break;
             case 'tokens.create':
                 data.stripe = await stripe.tokens.create(data.stripe);
@@ -38,10 +44,6 @@ async function send(data) {
                 break;
             case 'balanceTransactions.list':
                 data.stripe = await stripe.balanceTransactions.list();
-                break;
-            case 'createSourceCustomer':
-                delete data.stripe['customer'];
-                data.stripe = await stripe.customers.createSource(customer, data.stripe);
                 break;
             case 'paymentIntents.create':
                 data.stripe = await stripe.paymentIntents.create(data.paymentIntents);
@@ -192,6 +194,25 @@ async function webhooks(data) {
                                 })
                             }
                         }
+                        break;
+                    case 'account.updated':
+                        // Handle additional information request
+                        await data.crud.send({
+                            host: data.host,
+                            broadcast: false,
+                            broadcastSender: true,
+                            method: 'object.update',
+                            array: 'users',
+                            object: {
+                                "stripe.account": event.data.object,
+                            },
+                            $filter: {
+                                query: {
+                                    "stripe.account.id": event.data.object.id
+                                }
+                            },
+                            organization_id: data.organization_id
+                        })
                         break;
                     // Handle other event types
                     default:
