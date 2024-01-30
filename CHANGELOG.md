@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.21.0...v1.22.0) (2024-01-30)
+
+
+### Features
+
+* stripe.account support ([74e3164](https://github.com/CoCreate-app/CoCreate-stripe/commit/74e31647b33a6a0451b7f3bb7682c6f4781dac1c))
+
 # [1.21.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.20.2...v1.21.0) (2024-01-17)
 
 
