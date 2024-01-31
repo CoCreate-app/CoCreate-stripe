@@ -7,7 +7,10 @@ async function send(data) {
         if (data.req)
             return await webhooks(data)
 
-        const environment = data.environment || 'production';
+        let environment = data.environment || 'production';
+        if (!data.environment && (data.host.startsWith('dev.') || data.host.startsWith('test.')))
+            environment = 'test'
+
         const key = data.apis[environment].key;
         const stripe = require('stripe')(key);
 
