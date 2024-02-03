@@ -1,3 +1,10 @@
+## [1.22.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.22.1...v1.22.2) (2024-02-03)
+
+
+### Bug Fixes
+
+*  removed from clinet.js ([5df60e0](https://github.com/CoCreate-app/CoCreate-stripe/commit/5df60e0a190e2692e424f5f024c917e3c10449f6))
+
 ## [1.22.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.22.0...v1.22.1) (2024-02-02)
 
 
