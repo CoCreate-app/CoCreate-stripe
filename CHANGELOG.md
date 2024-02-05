@@ -1,3 +1,10 @@
+## [1.22.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.22.2...v1.22.3) (2024-02-05)
+
+
+### Bug Fixes
+
+* Removed https://cdn.cocreate.app/latest/CoCreate.min.css ([fdd2554](https://github.com/CoCreate-app/CoCreate-stripe/commit/fdd2554125ee3a002e1a22ee5120121788aa7f23))
+
 ## [1.22.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.22.1...v1.22.2) (2024-02-03)
 
 
