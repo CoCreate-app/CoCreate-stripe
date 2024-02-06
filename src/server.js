@@ -18,6 +18,9 @@ async function send(data) {
             case 'accounts.create':
                 data.stripe = await stripe.accounts.create(data.stripe);
                 break;
+            case 'files.create':
+                data.stripe = await stripe.files.create(data.stripe)
+                break;
             case 'customers.list':
                 data.stripe = await stripe.customers.list();
                 break;
