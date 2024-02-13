@@ -1,3 +1,11 @@
+# [1.23.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.22.3...v1.23.0) (2024-02-13)
+
+
+### Features
+
+* files.create ([6cb27a0](https://github.com/CoCreate-app/CoCreate-stripe/commit/6cb27a0f31874feb44d304d17d96dc4da77e940b))
+* subscriptionItems.update ([06817d2](https://github.com/CoCreate-app/CoCreate-stripe/commit/06817d2c9d393a3d1d948575c6eafddc49686248))
+
 ## [1.22.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.22.2...v1.22.3) (2024-02-05)
 
 
