@@ -13,6 +13,9 @@ async function send(data) {
 
         const key = data.apis[environment].key;
         const stripe = require('stripe')(key);
+        let param = data.stripe.$param[0]
+        delete data.stripe.$param
+
 
         switch (data.method.replace('stripe.', '')) {
             case 'accounts.create':
@@ -66,7 +69,10 @@ async function send(data) {
                 // }
                 break;
             case 'subscriptions.update':
-                data.stripe = await stripe.subscriptions.update(data.stripe.subscriptionId, data.stripe.subscriptions);
+                data.stripe = await stripe.subscriptions.update(param, data.stripe);
+                break;
+            case 'subscriptionItems.update':
+                data.stripe = await stripe.subscriptionItems.update(param, data.stripe);
                 break;
             case 'subscriptions.del':
                 data.stripe = await stripe.subscriptions.del(data.stripe.subscriptionId);
