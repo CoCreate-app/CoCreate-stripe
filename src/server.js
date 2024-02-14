@@ -13,9 +13,11 @@ async function send(data) {
 
         const key = data.apis[environment].key;
         const stripe = require('stripe')(key);
-        let param = data.stripe.$param[0]
-        delete data.stripe.$param
-
+        let param
+        if (data.stripe.$param) {
+            param = data.stripe.$param[0]
+            delete data.stripe.$param
+        }
 
         switch (data.method.replace('stripe.', '')) {
             case 'accounts.create':
