@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.0...v1.23.1) (2024-02-14)
+
+
+### Bug Fixes
+
+* $param handeling ([b770a07](https://github.com/CoCreate-app/CoCreate-stripe/commit/b770a0756f8e3f57494258abce06af2ee9c29296))
+
 # [1.23.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.22.3...v1.23.0) (2024-02-13)
 
 
