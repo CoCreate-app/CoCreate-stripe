@@ -228,6 +228,49 @@ async function webhooks(data) {
                             organization_id: data.organization_id
                         })
                         break;
+                    case 'balance.available':
+                        await data.crud.send({
+                            host: data.host,
+                            broadcast: false,
+                            broadcastSender: true,
+                            method: 'object.update',
+                            array: 'users',
+                            $filter: {
+                                query: { ambassadorAccount: event.data.object.accountId }
+                            },
+                            object: {
+                                "stripe.balance": event.data.object
+                            },
+                            organization_id: data.organization_id
+                        })
+                        break; break;
+                    case 'payout.created':
+                        await data.crud.send({
+                            host: data.host,
+                            broadcast: false,
+                            broadcastSender: true,
+                            method: 'object.create',
+                            array: 'payouts',
+                            object: event.data.object,
+                            organization_id: data.organization_id
+                        })
+                        break;
+                    case 'payout.paid':
+                    case 'payout.failed':
+                        await data.crud.send({
+                            host: data.host,
+                            broadcast: false,
+                            broadcastSender: true,
+                            method: 'object.update',
+                            array: 'payouts',
+                            $filter: {
+                                query: { "id": event.data.object.id } // Use the payout ID to find the correct record
+                            },
+                            object: event.data.object, // Directly use the event data object
+                            organization_id: data.organization_id
+                        });
+                        break;
+
                     // Handle other event types
                     default:
                         console.log(`Unhandled event type ${event.type}`);
