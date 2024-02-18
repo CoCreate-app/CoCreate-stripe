@@ -1,3 +1,10 @@
+## [1.23.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.1...v1.23.2) (2024-02-18)
+
+
+### Bug Fixes
+
+* add additional webhooks ([127e050](https://github.com/CoCreate-app/CoCreate-stripe/commit/127e050bf77c810bcf0b8e20f11758184538d284))
+
 ## [1.23.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.0...v1.23.1) (2024-02-14)
 
 
