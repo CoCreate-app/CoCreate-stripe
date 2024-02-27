@@ -23,6 +23,9 @@ async function send(data) {
             case 'accounts.create':
                 data.stripe = await stripe.accounts.create(data.stripe);
                 break;
+            case 'accounts.update':
+                data.stripe = await stripe.accounts.update(param, data.stripe);
+                break;
             case 'files.create':
                 data.stripe = await stripe.files.create(data.stripe)
                 break;
@@ -82,6 +85,11 @@ async function send(data) {
             case 'subscriptions.create':
                 data.stripe = await stripe.subscriptions.create(data.stripe);
                 break;
+            case 'transfers.create':
+                data.stripe = await stripe.transfers.create(data.stripe);
+                break;
+            default:
+                data.error = "unknown method"
         }
 
         return data
