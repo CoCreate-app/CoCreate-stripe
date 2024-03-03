@@ -13,7 +13,12 @@ async function send(data) {
 
         const key = data.apis[environment].key;
         const stripe = require('stripe')(key);
+
         let param
+        if (data.parameters) {
+            param = data.stripe.parameters
+        }
+
         if (data.stripe.$param) {
             param = data.stripe.$param[0]
             delete data.stripe.$param
