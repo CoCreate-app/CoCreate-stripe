@@ -1,3 +1,11 @@
+## [1.23.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.2...v1.23.3) (2024-03-18)
+
+
+### Bug Fixes
+
+* accounts.update and transfers.create ([e5b0e8a](https://github.com/CoCreate-app/CoCreate-stripe/commit/e5b0e8abd020c5aed2086ff31709b07bca433775))
+* data.parameter handling ([5877e3c](https://github.com/CoCreate-app/CoCreate-stripe/commit/5877e3c752defdeb014e6688053bc80ba17bae5a))
+
 ## [1.23.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.1...v1.23.2) (2024-02-18)
 
 
