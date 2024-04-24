@@ -256,7 +256,7 @@ async function webhooks(data) {
                             },
                             organization_id: data.organization_id
                         })
-                        break; break;
+                        break;
                     case 'payout.created':
                         await data.crud.send({
                             host: data.host,
