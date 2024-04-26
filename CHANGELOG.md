@@ -1,3 +1,10 @@
+## [1.23.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.3...v1.23.4) (2024-04-26)
+
+
+### Bug Fixes
+
+* remove duplicate break ([058f703](https://github.com/CoCreate-app/CoCreate-stripe/commit/058f703657c2c7f9191c9fd8382ea5e3863a655e))
+
 ## [1.23.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.2...v1.23.3) (2024-03-18)
 
 
