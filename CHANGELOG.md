@@ -1,3 +1,11 @@
+## [1.23.6](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.5...v1.23.6) (2024-06-12)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([de48c82](https://github.com/CoCreate-app/CoCreate-stripe/commit/de48c824f9e6fbf50bd62628202e0e67619ff69a))
+* svg icon class ([37c70ed](https://github.com/CoCreate-app/CoCreate-stripe/commit/37c70ed24ae0947b5fb8bbc09b4b1d312d127818))
+
 ## [1.23.5](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.4...v1.23.5) (2024-04-29)
 
 
