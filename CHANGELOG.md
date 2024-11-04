@@ -1,3 +1,16 @@
+# [1.24.0](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.8...v1.24.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* pretier.config.js and file formating ([6252e70](https://github.com/CoCreate-app/CoCreate-stripe/commit/6252e706b3351e310291a92de723a6f5f3243ab2))
+
+
+### Features
+
+* add prettier.config.js and format files ([4ee791a](https://github.com/CoCreate-app/CoCreate-stripe/commit/4ee791acfb5fa788bdb0d3e4f541c1a69d7daf25))
+* add prettier.config.js and format files ([cc87e8b](https://github.com/CoCreate-app/CoCreate-stripe/commit/cc87e8b83cccdf01c7ad8f160d5055e0f20801aa))
+
 ## [1.23.8](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.23.7...v1.23.8) (2024-06-23)
 
 
