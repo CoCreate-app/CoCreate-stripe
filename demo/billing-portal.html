@@ -1,0 +1,23 @@
+<input
+	type="hidden"
+	stripe="billingPortal.sessions.create"
+	stripe-key="return_url"
+	value="$href" />
+
+<input
+	type="hidden"
+	class="customer"
+	stripe="billingPortal.sessions.create"
+	stripe-key="customer"
+	input-attribute="$click"
+	input-next />
+<div actions="stripe.billingPortal.sessions.create"></div>
+
+<input
+	type="hidden"
+	stripe="billingPortal.sessions.create"
+	stripe-key="url"
+	stripe-request="false"
+	input-attribute="href"
+	input-next />
+<a>Billing Portal</a>
