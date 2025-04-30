@@ -1,3 +1,13 @@
+## [1.24.2](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.24.1...v1.24.2) (2025-04-30)
+
+
+### Bug Fixes
+
+* added css-loader ([ff6bbfc](https://github.com/CoCreate-app/CoCreate-stripe/commit/ff6bbfc618bf0c0b4b58695b611551067445f056))
+* update query attributes ([a8b6a90](https://github.com/CoCreate-app/CoCreate-stripe/commit/a8b6a90403cc7b16ab50ae6fed77ade3268afd16))
+* updated cocreate modules versions ([d72643f](https://github.com/CoCreate-app/CoCreate-stripe/commit/d72643f5ce267cc63e5247d944749b05f4de431e))
+* webpack.config and devdependencies ([04d8418](https://github.com/CoCreate-app/CoCreate-stripe/commit/04d84188c876ad13beece748475c41be8f9aade9))
+
 ## [1.24.1](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.24.0...v1.24.1) (2025-04-11)
 
 
