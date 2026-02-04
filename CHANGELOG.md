@@ -1,3 +1,10 @@
+## [1.24.4](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.24.3...v1.24.4) (2026-02-04)
+
+
+### Bug Fixes
+
+* update worklow ([861d4a6](https://github.com/CoCreate-app/CoCreate-stripe/commit/861d4a6c53dc89975eea04e8c07d14cf732c03d4))
+
 ## [1.24.3](https://github.com/CoCreate-app/CoCreate-stripe/compare/v1.24.2...v1.24.3) (2025-05-01)
 
 
